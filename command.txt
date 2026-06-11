@@ -1,0 +1,7 @@
+pandoc master.md (Get-ChildItem .\Chapters\*.md | Sort-Object Name | ForEach-Object FullName) `
+  -o thesis.pdf `
+  --filter pandoc-crossref `
+  --biblatex `
+  --pdf-engine=latexmk `
+  --pdf-engine-opt=-xelatex `
+  --pdf-engine-opt=-interaction=nonstopmode
