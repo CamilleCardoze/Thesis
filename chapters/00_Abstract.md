@@ -1,4 +1,12 @@
 # Abstract {-}
 
+This Final Project investigates the regeneration of a pharmaceutical waste solvent by batch extractive distillation, focusing on the recovery of high-purity isopropyl alcohol (IPA) from an IPA–water mixture using dimethyl sulfoxide (DMSO) as entrainer. The separation is necessary because IPA and water form a minimum-boiling azeotrope, which prevents effective recovery by conventional batch distillation. ChemCAD simulations were used to study the influence of operating parameters, charge composition, entrainer addition, reflux ratio, feed conditions, and number of stages on product purity, recovery, and process duration.
+
+The selected operating conditions allowed the process to exceed the required IPA purity specification of 99.75 mol%, achieving a maximum IPA distillate purity of 99.856 mol% during the main distillation step. The energy demand of the base process was evaluated, and heat-recovery alternatives were studied to reduce operating cost. Two main heat-recycling strategies were compared: a pre-heater using column top vapour and a heat pump configuration based on vapour compression. Although the pre-heater required lower additional capital investment, the heat pump method provided significantly greater long-term energy savings and a shorter estimated payback period.
+
+Material recovery strategies were also investigated by recycling run-off streams and recovering DMSO-rich residues. These methods were assessed for their ability to reduce solvent loss, decrease waste generation, and maintain the required IPA purity. In addition, preliminary equipment sizing was carried out for the packed distillation column, storage tanks, condenser, reboiler, vacuum pump, and heat-recovery equipment. A cost estimation was then prepared for the base distillation system and the proposed heat-recovery alternatives.
+
+Overall, the results show that batch extractive distillation with DMSO is a technically feasible method for regenerating high-purity IPA from pharmaceutical waste solvent streams. The proposed process combines solvent recovery, material recycling, and heat integration, making it a promising approach for reducing waste and improving the economic and environmental performance of solvent regeneration.
+
 \newpage
 \pagenumbering{arabic}

@@ -1,36 +1,59 @@
 # Column Geometry
 
-Our next step is to calculate the main dimensions of our column; that is, its column diameter, tank diameter, volume, height and thickness. In order to do this, we will need to obtain the flow rate of the vapour phase and the density of both the vapour and liquid phases in every stage throughout the column. This data can be obtained from the ChemCAD software, given by the tray analysis report.
+Our next step is to calculate the main dimensions of our column; that is, its column diameter, tank diameter, volume, height and thickness. In order to do this, we will need to obtain the flow rate of the vapour phase and the density of both the vapour and liquid phases in every stage throughout the column. This data was obtained from the ChemCAD software, given by the tray analysis report.
 
 ## F-factor and HETP value
 
-The F factor is a parameter that represents the momentum of our vapour phase. From the Sulzer packing catalogue, we have picked the structured MellapakPlusTM 252.Y packing, as has a high efficiency for atmospheric pressure distillation [add citation here]. In the same catalogue, it is possible to see the HETP-F factor graphs for each packing type, from which we will pick a safe F factor that will not cause flooding or weeping in our column. We selected 2 √Pa. [cite]
+The F factor is a parameter that represents the momentum of our vapour phase. From the Sulzer packing catalogue, we have picked the structured MellapakPlusTM 252.Y packing, as it offers a high operational efficiency (minimum hold-up) for atmospheric pressure distillation [add citation here]. It is widely used in the pharmaceutical and food industry. In the same catalogue, it is possible to see the HETP-F factor graphs for each packing type, from which we will pick a safe F factor that will not cause flooding or weeping in our column. We selected 2 √Pa [cite].
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.3\textwidth]{figs/packpic.png}
-\caption{MellapakPlus packing.}
-\label{fig:MellapakPlus packing.}
+\includegraphics[width=0.3\textwidth]{figs/packpic2.png}
+\caption{Zoomed-in view of the structured packing MellapakPlus.}
+\label{fig:Zoomed-in view of the structured packing}
 \end{figure}
 
-In the same catalogue section, we have a graph indicating what HETP (Height Equivalent to one Theoretical Plate) value corresponds to an F factor of 2: 0.4 m (see figure ?). The blue line refers to the distillation pressure in mbar.
+In the same catalogue section, we have a graph indicating what HETP (Height Equivalent to one Theoretical Plate) value corresponds to an F factor of 2: 0.4 m (see figure 8.2). The blue line refers to the distillation pressure in mbar.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{figs/sulz.png}
-\caption{HETP as a function of F-factor for MellapakPlus.}
+\includegraphics[width=0.4\textwidth]{figs/sulz.png}
+\caption{HETP as a function of the F-factor for MellapakPlus}
 \label{fig:HETP as a function of F-factor for MellapakPlus.}
 \end{figure}
 
 ## Pressure Jump
 
-[add an introduction and general formula]
+Pressure jump, also referred to as pressure drop, is the decrease in pressure that occurs as the vapour phase flows through the packing of the distillation column. In a packed column, this pressure loss is mainly caused by friction between the rising vapour, the descending liquid, and the surface of the packing. It is an important design parameter because excessive pressure loss can increase the pressure and temperature at the bottom of the column, which may negatively affect the separation and increase the operating requirements of the process. For a packed distillation column, the total pressure jump can generally be expressed as [cite]:
 
-However, in the Sulzer catalogue's MellapakPlusTM 252.Y packing section, a relationship between [x and y] is already provided:
+$\Delta P_{total} = \left(\frac{\Delta P}{H}\right) \cdot H$
 
-[add pressure jump graph from sulzer]
+where:
 
-[add conclusion]
+- $\Delta P_{total}$ = total pressure jump across the packed section, in mbar.
+- $\frac{\Delta P}{H}$ = pressure jump per unit height of packing, in mbar/m.
+- $H$ = total packed height of the column, in m.
+
+For a distillation column, the bottom pressure can then be estimated from the top pressure and the total column pressure jump:
+
+$P_{bottom} = P_{top} + \Delta P_{total}$
+
+However, in the Sulzer catalogue's MellapakPlus 252.Y packing section, a relationship between the pressure jump and the F-factor is already provided:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\textwidth]{figs/sulzp.png}
+\caption{Pressure jump per meter of the column (mbar/m) as a function of the F-factor for MellapakPlus}
+\label{fig:Pressure jump per meter of the column (mbar/m) as a function of the F-factor}
+\end{figure}
+
+$\frac{\Delta P}{H} = 1 \text{ mbar/m}$
+
+Since the packed height of the column is: $H = 10 \text{ m}$ the total pressure jump is:
+
+$\Delta P_{total} = 1 \text{ mbar/m} \cdot 10 \text{ m} = 10 \text{ mbar}$
+
+Therefore, the pressure at the bottom of the packed section is expected to be approximately 10 mbar higher than the pressure at the top of the column. The calculated pressure jump is small compared with the operating pressure of the distillation column. Therefore, the selected MellapakPlus™ structured packing is considered suitable, since it provides the required separation height while maintaining a low pressure drop. The 10 mbar pressure increase across the 10 m packed section is not expected to significantly affect the vapour-liquid equilibrium or the overall column operation.
 
 ## Column Height
 
@@ -74,11 +97,9 @@ $$ v = \frac{F}{\sqrt{\rho_v}} $$
 
 where:
 
-- `F` = F-factor, in `sqrt(Pa)`
-- `v` = maximum vapour velocity, in `m/s`
-- `rho_v` = vapour phase density, in `kg/m^3`
-
-[fix symbol]
+- $F$ = F-factor, in $sqrt(Pa)$
+- $v$ = maximum vapour velocity, in `m/s`
+- $rho_v$ = vapour phase density, in $kg/m^3$
 
 With the vapour velocity, the cross-sectional area of the column can be calculated by rearranging the continuity equation:
 
@@ -86,11 +107,9 @@ $$ A = \frac{\dot{V}}{v} $$
 
 where:
 
-- `A` = cross-sectional area of the column, in `m^2`
-- `V_dot` = vapour volumetric flow rate, in `m^3/s`
-- `v` = vapour velocity, in `m/s`
-
-[fix symbol]
+- $A$ = cross-sectional area of the column, in $m^2$
+- $V_dot$ = vapour volumetric flow rate, in $m^3/s$
+- $v$ = vapour velocity, in `m/s`
 
 The column diameter is then calculated from the circular area equation:
 
@@ -100,22 +119,22 @@ Solving for the diameter:
 
 $$ D = \sqrt{\frac{4A}{\pi}} $$
 
-For each stage of the process, the highest vapour volumetric flow rate and the lowest vapour density were considered in order to calculate the largest required column diameter. This approach was used for safety reasons, since the column must be able to operate under the most demanding vapour-flow conditions.
+For each stage of the process, the highest vapour volumetric flow rate and the lowest vapour density were considered in order to calculate the largest required column diameter, and these were obtained from ChemCAD's tray properties' reports. This approach was used for safety reasons, since the column must be able to operate under the most demanding vapour-flow conditions.
 
 Table: Diameter calculation results.
 \label{tab:Diameter calculation results}
 
 | Vapour vol. flow rate [m^3/s] | Vapour density [kg/m^3] | F-factor [sqrt(Pa)] | Vapour velocity [m/s] | Area [m^2] | Diameter [m] | HETP [m] | Height [m] |
 | ----------------------------- | ----------------------- | ------------------- | --------------------- | ---------- | ------------ | -------- | ---------- |
-| 0.492                         | 1.625                   | 2                   | 1.5689                | 0.193      | 0.496        | 0.4      | 9.6        |
-| 0.174                         | 0.853                   | 2                   | 2.1655                | 0.094      | 0.346        | 0.4      | 9.6        |
-| 0.210                         | 0.595                   | 2                   | 2.5928                | 0.136      | 0.416        | 0.4      | 9.6        |
-| 0.215                         | 0.593                   | 2                   | 2.5972                | 0.140      | 0.422        | 0.4      | 9.6        |
-| 0.240                         | 2.100                   | 2                   | 1.3801                | 0.083      | 0.325        | 0.4      | 9.6        |
+| 0.492                         | 1.625                   | 2                   | 1.5689                | 0.193      | 0.496        | 0.4      | 10.0       |
+| 0.174                         | 0.853                   | 2                   | 2.1655                | 0.094      | 0.346        | 0.4      | 10.0       |
+| 0.210                         | 0.595                   | 2                   | 2.5928                | 0.136      | 0.416        | 0.4      | 10.0       |
+| 0.215                         | 0.593                   | 2                   | 2.5972                | 0.140      | 0.422        | 0.4      | 10.0       |
+| 0.240                         | 2.100                   | 2                   | 1.3801                | 0.083      | 0.325        | 0.4      | 10.0       |
 
-As shown in Table ?, the highest calculated diameter value is 0.495689 m. This value can be rounded up to 0.5 m. To provide an additional safety margin, a safety factor of 20% is applied [cite]:
+As shown in Table 8.1, the highest calculated diameter value is 0.495689 m. This value can be rounded up to 0.5 m. To provide an additional safety margin, a safety factor of 20% is applied [cite]:
 
-$$ D\_{\text{selected}} = 0.50 \times 1.20 = 0.60 \text{ m} $$
+$$ D = 0.50 \times 1.20 = 0.60 \text{ m} $$
 
 Therefore, the final selected column diameter is 60 m.
 
@@ -125,7 +144,7 @@ The wall thickness of the distillation column was calculated by treating the col
 
 The minimum required wall thickness was calculated using the cylindrical vessel equation [cite]:
 
-$t = \frac{P R}{S E - 0.6P}$
+$$ t = \frac{P R}{S E - 0.6P} $$
 
 where:
 
@@ -170,11 +189,39 @@ $t_{\text{selected}} = 5 \text{ mm}$
 
 The final selected wall thickness of the column for the 6 bar internal pressure case is therefore 5 mm.
 
-The column is also later planned to withstand an internal pressure of 0.1 bar. Since the outside of the column is assumed to be at atmospheric pressure, this condition creates an external pressure difference of approximately $P_{\text{external}} = 1.013 - 0.1 = 0.913 \text{ bar}$. This case must be checked separately, because vacuum operation is controlled by external pressure collapse rather than internal pressure stress.
+The column is also later planned to withstand an internal pressure of 0.1 bar. Since the outside of the column is assumed to be at atmospheric pressure, this condition creates an external pressure difference of approximately $P_{\text{external}} = 1.013 - 0.1 = 0.913 \text{ bar}$.
 
 A preliminary external pressure check shows that a 5 mm wall thickness can withstand the vacuum condition if the full 5 mm thickness is available structurally:
 
-[add external pressure check calculations]
+the external pressure difference is:
+
+$P_{external} = 1.013 - 0.1 = 0.913 \text{ bar} = 91300 \text{ Pa}$
+
+For a preliminary thin cylindrical shell buckling check, the following expression was used [cite]:
+
+$P_{cr} = \frac{2E}{\sqrt{3(1-\nu^2)}} \left(\frac{t}{R}\right)^3$
+
+where $P_{cr}$ is the critical external pressure, $E$ is Young’s modulus, $\nu$ is Poisson’s ratio, $t$ is the wall thickness, and $R$ is the column radius.
+
+Using carbon steel properties [cite]:
+
+$E = 200 \cdot 10^9 \text{ Pa}$
+
+$\nu = 0.30$
+
+and the selected column dimensions:
+
+$t = 0.005 \text{ m}$
+
+$R = 0.30 \text{ m}$
+
+the critical external pressure is:
+
+$P_{cr} = \frac{2(200 \cdot 10^9)}{\sqrt{3(1-0.30^2)}} \left(\frac{0.005}{0.30}\right)^3$
+
+$P_{cr} = 1.12 \cdot 10^6 \text{ Pa} = 11.2 \text{ bar}$
+
+Since the estimated critical external pressure is much higher than the vacuum pressure difference, the selected 5 mm wall thickness is acceptable for this preliminary vacuum check.
 
 However, if the 5 mm thickness includes a 3.2 mm corrosion allowance, the effective structural thickness would be only 1.8 mm, which is not sufficient for the 0.1 bar internal pressure case. Therefore, if vacuum operation at 0.1 bar must be guaranteed while keeping the 3.2 mm corrosion allowance, a larger nominal wall thickness, such as 7 mm, is recommended.
 
@@ -188,7 +235,7 @@ In order to provide an additional safety margin for bubbling and avoid operating
 
 The volume of a cylindrical tank is calculated as:
 
-$V = \frac{\pi D^2}{4}H$
+$$ V = \frac{\pi D^2}{4}H $$
 
 where:
 

@@ -1,24 +1,20 @@
 # Distillation Results
 
-## Purity, Mass and Elapsed Time
-
 We achieved a maximum purity of 99.856 mol% IPA, meeting our requirements; 0.14 ≤ 0.25 mol% water, 0.0012 ≤0.15 mol% DMSO.
 The total elapsed time was 9.05 hours.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.4\textwidth]{figs/Picture20.png}
+\includegraphics[width=0.3\textwidth]{figs/Picture20.png}
 \caption{Stream results.}
 \label{fig:Stream results}
 \end{figure}
-
-## Distillate Graph
 
 From the graphs produced by the ChemCAD simulation, it is possible to observe how the composition of the distillate changed with time, under our chosen parameter values:
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{figs/Picture21.png}
+\includegraphics[width=0.8\textwidth]{figs/Picture21.png}
 \caption{Depiction of the distillate composition’s change with time.}
 \label{fig:Depiction of the distillate composition’s change with time}
 \end{figure}
@@ -66,6 +62,13 @@ The VLE diagrams show that the addition of DMSO changes the phase-equilibrium be
 After obtaining our desired product, the distillation column will still have liquid at the bottom, which composition is still rich in all three components: water, DMSO and IPA.
 
 In an attempt to recover as much water as possible, as well as solvent, three more stages to the process were added: a water-IPA run-off stage, a water distillation stage, and a water-DMSO run-off stage.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/newsim.png}
+\caption{New ChemCAD simulation layout.}
+\label{fig:New ChemCAD simulation layout}
+\end{figure}
 
 In the water-IPA run-off stage, we will attempt to dispose of all leftover IPA in the bottom, in order to extract water more efficiently in the next phase. In the water distillation stage, we will separate as much water from the leftover mixture as possible, with the same purity parameters as IPA.Finally, for the water-DMSO run-off stage, we want to leave as little water in the bottom as possible in order to recover the solvent, again, following the same purity requirements as IPA.
 

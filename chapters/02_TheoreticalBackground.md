@@ -4,11 +4,11 @@
 
 In batch extractive distillation, a mixture of a more volatile and a less volatile component is cyclically heated and cooled to achieve the component separation, by causing the more volatile component to evaporate in a higher concentration and then condensate for its recovery. This process is done in batch, where only a portion of the mixture is treated in a single cycle; a fixed amount of it is to be separated at a time [cite lecture].
 
-The distillate of the mixture is separated from the less volatile substances that are left in the residue or at the bottom of the tanks, by being brought back to its liquid phase by a condenser and then collected. However, part of this condensate will return to the column as reflux to improve the mass transfer between phases and therefore the efficiency of the column, at a ratio we will call reflux ratio. It is the quotient of the liquid used as reflux and the total liquid extracted (distillate). The composition of our distillate will steadily change (the more volatile component’s mole fraction will decrease in the distillate and increase the tank) as the procedure progresses [cite].
+The distillate of the mixture is separated from the less volatile substances that are left in the residue or at the bottom of the tanks, by being brought back to its liquid phase by a condenser and then collected. However, part of this condensate will return to the column as reflux to improve the mass transfer between phases and therefore the efficiency of the column, at a ratio we will call reflux ratio. It is the quotient of the liquid used as reflux and the total liquid extracted (distillate). The composition of our distillate will steadily change (the more volatile component’s mole fraction will decrease in the distillate and increase the tank) as the procedure progresses.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.4\textwidth]{figs/batchex.png}
+\includegraphics[width=0.5\textwidth]{figs/batchex.png}
 \caption{A diagram illustrating batch extractive distillation.}
 \label{fig:A diagram illustrating batch extractive distillation}
 \end{figure}
@@ -44,9 +44,9 @@ where Q is the heat duty, k is the overall heat-transfer coefficient, A is the h
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{figs/simpleshell.png}
-\caption{Simple, single-pass shell and tube heat exchanger.}
-\label{fig:Simple, single-pass shell and tube heat exchanger}
+\includegraphics[width=0.7\textwidth]{figs/simpleshell.png}
+\caption{Diagram of a single-pass shell and tube heat exchanger.}
+\label{fig:Diagram of a single-pass shell and tube heat exchanger}
 \end{figure}
 
 ## Heat Recycling in the Industry

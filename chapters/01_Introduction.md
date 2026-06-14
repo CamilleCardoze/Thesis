@@ -2,9 +2,9 @@
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{figs/column.jpg}
-\caption{Distillation column.}
-\label{fig:distillation column}
+\includegraphics[width=0.7\textwidth]{figs/column.jpg}
+\caption{Distillation columns.}
+\label{fig:distillation columns}
 \end{figure}
 
 The main goal of this research project is to investigate a batch extractive distillation process using dimethyl sulfoxide as a solvent to recover a distillate containing at least 99.75 mol% isopropyl alcohol, shortened to IPA in this document. This separation is especially relevant to the pharmaceutical industry, where IPA is commonly used and is often required in very high concentrations. The mixture to be separated contains water, IPA, dimethyl sulfoxide, abbreviated as DMSO, and a negligible amount of toluene. Simple batch distillation cannot be used effectively for this regeneration process, since water and IPA form a homogeneous minimum-boiling azeotrope at approximately 87–88 mass% IPA and 80.2–80.4 °C.

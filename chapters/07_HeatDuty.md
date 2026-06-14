@@ -1,10 +1,28 @@
 # Heat Duty
 
+Heat duty is the rate at which heat must be added to or removed from a process unit; in heat-transfer design, it is usually referred to as $Q$. For heaters, reboilers, and evaporators, heat duty is the heat supplied; for coolers and condensers, it is the heat removed.
+
+Common units include: $\mathrm{W}$, $\mathrm{kW}$, $\mathrm{MW}$, $\mathrm{MJ/h}$
+
+For sensible heating or cooling, the heat duty is calculated as:
+
+${Q} = \dot{m} c_p \Delta T$
+
+where $\dot{m}$ is the mass flow rate, $c_p$ is the specific heat capacity, and $\Delta T$ is the temperature change.
+
+For phase change, such as boiling or condensation, the heat duty is the mass flow rate multiplied by the change in enthalpy:
+
+${Q} = \dot{m} \Delta H$
+
+The total energy consumed is obtained by multiplying the heat duty by the operating time:
+
+$E = {Q} \cdot t$
+
 The distillation process requires energy, which we will want to keep at a minimum in order not to spend resources unnecessarily. Each parameter changes the heat duty of the operation in a different way; however, we have set the column re-boiler’s duty to be 1000 MJ/h, therefore we will focus on how heating up the DMSO feed will affect the outcomes, which we will calculate using a controller and a heat exchanger (via ChemCAD simulation). We will gather data relating to the amount of energy it takes to heat up the DMSO to a desired temperature, and how much energy it takes to feed the column. We will add our obtained quantities to the overall column duty and multiply by the number of hours it takes for the process to be complete.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{figs/heatd.png}
+\includegraphics[width=0.7\textwidth]{figs/heatd.png}
 \caption{Layout of the heat duty measurement equipment in ChemCAD.}
 \label{fig:Layout of the heat duty measurement equipment in ChemCAD.}
 \end{figure}
@@ -25,9 +43,9 @@ Table: Feed Heating Duty
 
 We can observe that raising the feed temperature from 20֯C to 62֯C will require a heat duty of around 50 MJ/h, and it will be heated up during the entire dIPA distillation process, which is 9.05 hours. Adding this to our reboiler duty, which will work for 16.15 hours, we obtain 16600 MJ in total for the distillation of IPA.
 
-## Energy Cost Estimation
+## Energy Costs
 
-The energy cost was estimated from the reboiler duty and the additional energy required to heat the DMSO feed from 20°C to 62°C. As of 2012 in the United States, literature reports a general electricity cost of approximately:
+The energy cost was estimated from the reboiler duty and the additional energy required to heat the DMSO feed from 20°C to 62°C. As of 2013 in the United States, literature reports a general electricity cost of approximately:
 
 $$
 C_{\mathrm{energy}} = 16.8\ \text{\$} / \mathrm{GJ}
@@ -77,4 +95,4 @@ $$
 C_{\mathrm{process}} = 16.6025 \cdot 16.8 = 278.92\ \text{\$}
 $$
 
-Therefore, using the energy cost reported by literature [cite], the estimated energy cost is approximately 159.64 $\text{\$}$ for the main IPA distillation step and 278.92 $\text{\$}$ for the complete process.
+Therefore, using the energy cost reported by literature [@kiss_2013], the estimated energy cost is approximately 159.64 $\text{\$}$ for the main IPA distillation step and 278.92 $\text{\$}$ for the complete process.

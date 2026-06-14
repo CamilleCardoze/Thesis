@@ -44,14 +44,14 @@ filters:
 pages={1, 2},
 pagecommand={\thispagestyle{empty}}
 ]{Thesis/figures/Title_page.pdf}
-\clearpage
+\clearpage -->
 
 \includepdf[
-pages={1, 2},
+pages={1},
 fitpaper=true,
 pagecommand={\thispagestyle{empty}}
-]{Thesis/signed.PDF}
-\clearpage -->
+]{figs/thesis_sheet.pdf}
+\clearpage
 
 \clearpage
 \tableofcontents

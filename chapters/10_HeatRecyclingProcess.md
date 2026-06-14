@@ -12,28 +12,14 @@ The purpose of comparing these two methods is to determine how effectively the a
 
 In the pre-heater method, the heat contained in the vapour leaving the top of the distillation column is used to pre-heat the DMSO feed before it enters the column. This reduces the amount of external heat required to bring the solvent feed to the selected inlet temperature. The simulation was carried out in ChemCAD using a heat exchanger, where the hot side corresponds to the overhead vapour and the cold side corresponds to the feed stream.
 
-[add picture]
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/preh.png}
+\caption{ChemCAD simulation arrangement for the pre-heater calculations.}
+\label{fig:ChemCAD simulation arrangement for the pre-heater calculation}
+\end{figure}
 
-The highest heat-duty value and the lowest logarithmic mean temperature difference were used for the calculation, since this represents the most conservative sizing case. This ensures that the calculated heat-transfer area is large enough to transfer the required amount of heat under the least favorable temperature-driving-force conditions.
-
-[add picture of graph from chemcad]
-
-The main design equation used for the heat exchanger is:
-
-$Q = K A \Delta T_{log}$
-
-Rearranging for the heat-transfer area:
-
-$A = \frac{Q}{K \Delta T_{log}}$
-
-where:
-
-- $Q$ = heat duty, in W
-- $K$ = overall heat-transfer coefficient, in W/m²K
-- $A$ = required heat-transfer area, in m²
-- $\Delta T_{log}$ = logarithmic mean temperature difference, in K
-
-The logarithmic mean temperature difference was calculated from the two terminal temperature differences:
+We used the main design equation for the heat exchangers is, and the logarithmic mean temperature difference was calculated from the two terminal temperature differences:
 
 $\Delta T_{log} = \frac{\Delta T_1 - \Delta T_2}{\ln \left(\frac{\Delta T_1}{\Delta T_2}\right)}$
 
@@ -43,7 +29,14 @@ $\Delta T_1 = T_{1,1} - T_{2,1}$
 
 $\Delta T_2 = T_{1,2} - T_{2,2}$
 
-The temperatures used in the pre-heater calculation are shown below:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{figs/prehT.png}
+\caption{ChemCAD plot displaying the top vapour temperature during step 1. It was determined to be 82.4 °C.}
+\label{fig:hemCAD plot displaying the top vapour temperature during step 1}
+\end{figure}
+
+We need to heat up the feed to increase its temperature from 20°C (room temperature) to 62°C. Since the DMSO vapour experiences a phase change (condensation), its temperature can be assumed to remain constant [cite]. The temperatures used in the pre-heater calculation, in Kelvin, are shown below:
 
 Table: Pre-heater temperatures.
 \label{tab:Pre-heater temperatures}
@@ -55,21 +48,7 @@ Table: Pre-heater temperatures.
 | Cold inlet temperature  | $T_{2,1}$ | 293.15 |    K |
 | Cold outlet temperature | $T_{2,2}$ | 335.15 |    K |
 
-We need to heat up the feed to increase its temperature from 20°C (room temperature) to 62°C. Since the DMSO vapour experiences a phase change (condensation), its temperature can be assumed to remain constant [cite].
-
-Using these values, the two terminal temperature differences are:
-
-$\Delta T_1 = 355.55 - 293.15$
-
-$\Delta T_1 = 62.40 \text{ K}$
-
-$\Delta T_2 = 355.55 - 335.15$
-
-$\Delta T_2 = 20.40 \text{ K}$
-
-Therefore:
-
-$\Delta T_{log} = \frac{62.40 - 20.40}{\ln \left(\frac{62.40}{20.40}\right)}$
+Replacing the logarithmic mean temperature difference formula with these values, we obtain:
 
 $\Delta T_{log} = 37.57 \text{ K}$
 
@@ -88,31 +67,16 @@ The calculated temperature differences and heat duty are summarized below:
 Table: Pre-heater heat duty.
 \label{tab:Pre-heater heat duty}
 
-| Parameter             |           Symbol |    Value | Unit |
-| --------------------- | ---------------: | -------: | ---: |
-| Terminal difference 1 |     $\Delta T_1$ |    62.40 |    K |
-| Terminal difference 2 |     $\Delta T_2$ |    20.40 |    K |
-| LMTD                  | $\Delta T_{log}$ |    37.57 |    K |
-| Heat duty             |              $Q$ |    45.13 | MJ/h |
-| Heat duty             |              $Q$ | 12536.78 |    W |
+| Parameter               |           Symbol | Value | Unit |
+| ----------------------- | ---------------: | ----: | ---: |
+| Terminsl T difference 1 |     $\Delta T_1$ | 62.40 |    K |
+| Terminal T difference 2 |     $\Delta T_2$ | 20.40 |    K |
+| LMTD                    | $\Delta T_{log}$ | 37.57 |    K |
+| Heat duty               |              $Q$ | 45.13 | MJ/h |
 
 Three possible heat-transfer areas were calculated using different overall heat-transfer coefficients. The first value, $K_{vap} = 850 \text{ W/m}^2\text{K}$, represents the assumed overall heat-transfer coefficient for a change of phase in a heat exchanger. The second value, $K_{dist} = 570 \text{ W/m}^2\text{K}$ [cite], represents an estimation of the required heat-transfer coefficient for the condensation of IPA vapour. The third value, $K_{calc} = 534.4 \text{ W/m}^2\text{K}$, represents the calculated overall heat-transfer coefficient used for the final conservative sizing. This is the heat transfer coefficient that was calculated for the main condenser of this column.
 
-The area calculation was carried out using:
-
-$A = \frac{Q}{K \Delta T_{log}}$
-
-For $K_{vap} = 850 \text{ W/m}^2\text{K}$:
-
-$A_{vap} = \frac{12536.78}{850 \times 37.57}$
-
-$A_{vap} = 0.393 \text{ m}^2$
-
-For $K_{dist} = 570 \text{ W/m}^2\text{K}$:
-
-$A_{dist} = \frac{12536.78}{570 \times 37.57}$
-
-$A_{dist} = 0.585 \text{ m}^2$
+The highest calculated heat-transfer area is obtained using the lowest overall heat-transfer coefficient:
 
 For $K_{calc} = 534.4 \text{ W/m}^2\text{K}$:
 
@@ -120,22 +84,9 @@ $A_{calc} = \frac{12536.78}{534.4 \times 37.57}$
 
 $A_{calc} = 0.6245 \text{ m}^2$
 
-The calculated heat-transfer areas are shown below:
+Therefore, the selected required heat-transfer area for the pre-heater is $0.6245 \text{ m}^2$.
 
-Table: Pre-heater area.
-\label{tab:Pre-heater area}
-
-| Case                  |     Symbol | K [W/m²K] | Area [m²] |
-| --------------------- | ---------: | --------: | --------: |
-| Vapour estimate       |  $A_{vap}$ |       850 |     0.393 |
-| Distillation estimate | $A_{dist}$ |       570 |     0.585 |
-| Final estimate        | $A_{calc}$ |       540 |    0.6245 |
-
-The highest calculated heat-transfer area is obtained using the lowest overall heat-transfer coefficient. Therefore, the selected required heat-transfer area for the pre-heater is 0.6245 m^2.
-
-The pre-heater therefore allows the feed to enter the distillation column at the selected feed temperature of 62°C using recovered heat from the overhead vapour. This decreases the amount of additional external energy that would otherwise be required to heat the feed before it enters the column; as we calculated before, the heat duty needed to raise the feed's temperature externally would be approximately 50 MJ/hr, while our pre-heater would only need approximately 45 MJ/h in the same amount of time [mention time]. Not only would it efficiently save on energy, but also on costs.
-
-The pre-heater method provides a simple and practical way to recycle part of the heat contained in the overhead vapour. The required heat-transfer area is relatively small, with a final calculated value of 0.618 m² which will be used for future cost estimation calculations. All of our results indicate that the heat available from the top vapour is sufficient to pre-heat the feed from 20°C to 62°C under the selected operating conditions.
+The pre-heater therefore allows the feed to enter the distillation column at the selected feed temperature of 62°C using recovered heat from the overhead vapour. This decreases the amount of additional external energy that would otherwise be required to heat the feed before it enters the column; as we calculated before, the heat duty needed to raise the feed's temperature externally would be approximately 50 MJ/hr, while our pre-heater would only need approximately 45 MJ/h in the same amount of time (9.05 h). Not only would it efficiently save on energy, but also on costs. It also provides a simple and practical way to recycle part of the heat contained in the overhead vapour, while its required heat-transfer area is relatively small.
 
 ## Heat Pump Method
 
@@ -145,7 +96,12 @@ Before the final arrangement was selected, different compression ratios were inv
 
 The simulated heat pump arrangement in ChemCAD included two compressors, an inter-cooler between them, a first heat exchanger with a set heat duty of -1000 MJ/h to represent the heat taken out by the reboiler, an expansion valve, and a second heat exchanger that was used to document the amount of remaining energy that could be recovered and used for other purposes. The inter-cooler was required to reduce the vapour temperature between compression stages and to avoid excessively high temperatures after the second compressor. The two-stage compression arrangement also made the heat pump behavior more stable than the single-compressor cases.
 
-[add picture]
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/heatp.png}
+\caption{ChemCAD heat pump simulation arrangement.}
+\label{fig:ChemCAD heat pump simulation arrangement}
+\end{figure}
 
 The simulation was carried out dynamically using ChemCAD data maps and Excel coding. The input vapour composition and temperature at each time step was obtained from ChemCAD reports for the top vapour stream, these values were out-putted as a large excel table. Our excel file was programmed to transfer the data values to a specific cell in the document every 0.05 h (see code in Appendix). ChemCAD then read these values through a data map and used them as inputs for the heat pump simulation. In the same way, the output values from ChemCAD were exported back into Excel every 0.05 h and stored in a second table.
 
@@ -213,9 +169,39 @@ Table: Useful heat pump period.
 | Max. compressor 2 duty |  99.72 | MJ/h |
 | Avg. LMTD              |  89.57 |    K |
 
-For the inter-cooler, the maximum heat duty was used for future cost estimation.
+Table: Summary of heat pump's energy demand and output.
+\label{tab:Summary of heat pump's energy demand and output}
 
-Converting to watts:
+| Equipment    | Max. duty [MJ/h] |
+| ------------ | ---------------: |
+| Compressor 1 |            97.61 |
+| Compressor 2 |            99.72 |
+| Inter-cooler |            24.08 |
+| Heat exch. 2 |            169.4 |
+
+Using the maximum compressor duties and inter-cooler duty as a conservative estimate, the energy required to operate the heat pump for 4.5 h is:
+
+$$
+(97.61 + 99.72 + 24.08)\times 4.5 = 996.345\ \text{MJ}
+$$
+
+During the same period, the heat pump replaces part of the reboiler duty through the first heat exchanger, which was simulated with a duty of $1000\ \text{MJ/h}$. Therefore, the avoided reboiler energy is:
+
+$$
+1000\times 4.5 = 4500\ \text{MJ}
+$$
+
+The net energy saving is therefore approximately:
+
+$$
+4500 - 996.345 = 3503.655\ \text{MJ}
+$$
+
+This means that, from an energy-balance point of view, the heat pump is viable during the first 4.5 h of operation, since the energy recovered for the reboiler is much greater than the compressor energy required. the heat pump method can be considered energetically beneficial as a partial heat-recovery option, but its final practical viability must also consider its higher equipment complexity and capital cost, since it requires two compressors, an inter-cooler, an expansion valve, and additional heat exchangers.
+
+For future cost estimation, the inter-cooler's maximum heat duty and heat transfer area were used.
+
+Conversion to watts:
 
 $Q_{max} = \frac{24.08 \times 10^6}{3600}$
 
@@ -237,46 +223,16 @@ The logarithmic mean temperature difference calculated was:
 
 $\Delta T_{log} = 88.46 \text{ K}$
 
-The heat-transfer area was calculated using:
+Assuming the inter-cooler is a single pass heat exchanger, the correction factor F was calculated to be 1 from correction factor graph for a single-pass heat exchanger [cite book].
 
-$A = \frac{Q}{F}{K \Delta T_{log}}$
-
-The correction factor F was calculated to be 1:
-
-[add formulas and results for x, y]
-
-These values can be located in the correction factor graph for a single-pass heat exchanger, and the value of F can be deducted [cite book]:
-
-$F = 1 \text{-}$
-
-Using $K = 150 \text{ W/m}^2\text{K}$, from literature [cite book]:
+Using $K = 150 \text{ W/m}^2\text{K}$ [cite book], The heat-transfer area was calculated using the heat transfer area equation for heat exchangers:
 
 $A = \frac{6688.01}{150 \times 88.46}$
 
 $A = 0.501 \text{ m}^2$
 
-The maximum compressor duties were converted into horsepower for later equipment cost estimation.
-
-Table: Heat pump costing values.
-\label{tab:Heat pump costing values}
-
-| Equipment    | Max. duty [MJ/h] | Power [W] | Power [hp] |
-| ------------ | ---------------: | --------: | ---------: |
-| Compressor 1 |            97.61 |  27113.34 |      36.36 |
-| Compressor 2 |            99.72 |  27700.24 |      37.15 |
-| Inter-cooler |            24.08 |   6688.01 |          - |
-| Recovered Q  |            169.4 |   47054.7 |          - |
-
-[compare energy needed to do this for 4.5 hrs vs energy it would take the reboiler. Conclude if it is viable or not]
-
 ## Method Comparison
 
-[change depending on conclusion above]
+For the pre-heater method, the recovered overhead-vapour heat is used to heat the feed before it enters the column. The total recovered energy is $45 \times 9.05 = 407.25\ \text{MJ}$. Therefore, only about $(50-45)\times 9.05 = 45.25\ \text{MJ}$ of additional external feed-heating energy would still be required. In comparison, the heat pump method can replace $1000 \times 4.5 = 4500\ \text{MJ}$ of reboiler energy during its useful 4.5 h operating period. However, it also requires compressor energy and inter-cooler energy, equal to 996.345 MJ. The net energy saving of the heat pump method is therefore around 3500 MJ. This is much more energy saved than in the pre-heater method, therefore, the heat pump method is clearly superior from a net energy-saving perspective.
 
-[compare energy saved with pre-heater vs energy saved with heat pump]
-
-[The heat pump method is technically capable of recovering heat from the overhead vapour and transferring it to the bottom of the column. During the first 4.5 h, the compressed vapour remains in the vapour phase after compression and is then condensed in the heat exchanger, allowing useful heat to be extracted. In this useful interval, the recovered heat duty ranges from approximately 169.40 MJ/h to 116.89 MJ/h.
-
-However, the method is only suitable for the first 4.5 h of the operation. After this period, the changing composition and temperature of the overhead vapour make the heat pump behavior less suitable for stable heat recovery. Single-compressor arrangements with different compression ratios were investigated, but none provided satisfactory behavior over the required operating range. Lower compression ratios did not provide enough useful temperature lift, while higher compression ratios created excessive outlet temperatures. Therefore, the final selected arrangement uses two compressors with an inter-cooler, each operating with a compression ratio of 1:4.
-
-Compared with the pre-heater method, the heat pump method is more complex and requires additional equipment, including two compressors, an inter-cooler, an expansion valve, and additional heat exchangers. Its advantage is that it can upgrade the temperature level of the overhead vapour and help reduce reboiler heat demand. Its main disadvantage is that it is only useful for a limited part of the batch operation and requires significant compressor work. For this reason, the heat pump method may be useful as a partial heat-recovery option, but it is more complicated and less broadly applicable than the pre-heater method.]
+However, with the pre-heater method, the heat pump method is much more complex and requires additional equipment, including two compressors, an inter-cooler, an expansion valve, and additional heat exchangers. Its main disadvantage is that it is only useful for a limited part of the batch operation and requires significant compressor work. For this reason, the heat pump method may be useful as a partial heat-recovery option, but it is more complicated and less broadly applicable than the pre-heater method, as well as more costly.
