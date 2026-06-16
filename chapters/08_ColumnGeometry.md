@@ -4,7 +4,7 @@ Our next step is to calculate the main dimensions of our column; that is, its co
 
 ## F-factor and HETP value
 
-The F factor is a parameter that represents the momentum of our vapour phase. From the Sulzer packing catalogue, we have picked the structured MellapakPlusTM 252.Y packing, as it offers a high operational efficiency (minimum hold-up) for atmospheric pressure distillation [add citation here]. It is widely used in the pharmaceutical and food industry. In the same catalogue, it is possible to see the HETP-F factor graphs for each packing type, from which we will pick a safe F factor that will not cause flooding or weeping in our column. We selected 2 √Pa [cite].
+The F factor is a parameter that represents the momentum of our vapour phase. From the Sulzer packing catalogue, we have picked the structured MellapakPlusTM 252.Y packing, as it offers a high operational efficiency (minimum hold-up) for atmospheric pressure distillation [@sulzer_structured_packings_nd]. It is widely used in the pharmaceutical and food industry. In the same catalogue, it is possible to see the HETP-F factor graphs for each packing type, from which we will pick a safe F factor that will not cause flooding or weeping in our column. Therefore, we selected 2 √Pa.
 
 \begin{figure}[H]
 \centering
@@ -59,7 +59,7 @@ Therefore, the pressure at the bottom of the packed section is expected to be ap
 
 Since the HETP value is known, the calculation of the column height can be carried out directly. HETP stands for Height Equivalent to one Theoretical Plate, and represents the height of packing required to achieve the separation effect of one theoretical stage.
 
-The column height is calculated using the following equation [cite lecture]:
+The column height is calculated using the following equation [@bme_distillation_notes_v_nd]:
 
 $H = N \times HETP$
 
@@ -142,11 +142,11 @@ The wall thickness of the distillation column was calculated by treating the col
 
 The minimum required wall thickness was calculated using the cylindrical vessel equation [cite]:
 
-$$ t = \frac{P R}{S E - 0.6P} $$
+$$ x = \frac{P R}{S E - 0.6P} $$
 
 where:
 
-- $t$ = minimum required wall thickness, in m
+- $x$ = minimum required wall thickness, in m
 - $P$ = design pressure, in Pa
 - $R$ = internal radius of the column, in m
 - $S$ = allowable stress of the construction material, in Pa
@@ -166,13 +166,13 @@ Table: Parameters relevant to wall thickness.
 
 Substituting the values:
 
-$t = \frac{600000 \times 0.30}{(120 \times 10^6)(0.85) - 0.6(600000)} = 0.00177 \text{ m}$
+$x = \frac{600000 \times 0.30}{(120 \times 10^6)(0.85) - 0.6(600000)} = 0.00177 \text{ m}$
 
-$t = 1.77 \text{ mm}$
+$x = 1.77 \text{ mm}$
 
-The calculated theoretical wall thickness is therefore 1.77 mm. However, this value only represents the minimum thickness required to withstand the selected internal design pressure. A corrosion allowance must also be included, especially because carbon steel is used as the construction material. Assuming a corrosion allowance of 3.2 mm [cite book]:
+The calculated theoretical wall thickness is therefore 1.77 mm. However, this value only represents the minimum thickness required to withstand the selected internal design pressure. A corrosion allowance must also be included, especially because carbon steel is used as the construction material. Assuming a corrosion allowance of 3.2 mm [@coulson_richardson_shell_tube_nd]:
 
-$t_{\text{final}} = t + C_A = 1.77 + 3.2 = 4.97 \text{ mm}$
+$x_{\text{final}} = t + C_A = 1.77 + 3.2 = 4.97 \text{ mm}$
 
 Therefore, the selected practical wall thickness is rounded up to 5 mm.
 
@@ -198,7 +198,7 @@ $\nu = 0.30$
 
 and the selected column dimensions:
 
-$t = 0.005 \text{ m}$
+$x = 0.005 \text{ m}$
 
 $R = 0.30 \text{ m}$
 

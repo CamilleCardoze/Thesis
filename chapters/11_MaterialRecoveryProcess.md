@@ -241,7 +241,7 @@ Different stop values for the process were investigated, finally falling at 0.99
 
 After many trials, it was determined that a high reflux ratio paired with vacuum conditions will be needed. This is due to the fact that, as the last traces of water begin to evaporate, at this temperature DMSO starts turning into vapour as well, rapidly, since the reboiler keeps providing heat. To obtain a purity of more than 99.75 mol% for both water and DMSO, we must take the pressure down to 0.1 bar to stimulate quick water evaporation and make the gap between water's and DMSO's volatility bigger. In the same way, it was determined that a reflux ratio of 9 will be needed. As the cold reflux liquid flows downward, it meets the hot, rising DMSO vapor. This forces DMSO condense back into liquid, while water continues to vaporize and rise. The reason for the need behind such a high R value is time. Just as with pressure, the more time it takes to complete the operation, the more DMSO gets heated up and evaporated. With lower reflux ratios, it was not possible to find a middle ground where both the distillate and the bottoms are of acceptable quality.
 
-However, our ChemCAD simulation needed additional aid in order to converge. Hold-up values were added: 5 dm3 for the condenser and 3 dm3 for the stages [cite]. These represent the liquid that gets "held up" and does not continue to form part of the distillate or does not fully evaporate, due to the geometry of the condenser and the type of packing. Adding hold up values also makes our process more accurate and realistic.
+However, our ChemCAD simulation needed additional aid in order to converge. Hold-up values were added: 5 dm3 for the condenser and 3 dm3 for the stages [@kiss_2013]. These represent the liquid that gets "held up" and does not continue to form part of the distillate or does not fully evaporate, due to the geometry of the condenser and the type of packing. Adding hold up values also makes our process more accurate and realistic.
 
 In order to maintain realism, several batches for both recycling methods were performed again, with the same hold-up values for the column as in the water/DMSO distillation. However, our results (composition, mass, time) only slightly changed, affecting the values only after 2-3 decimal points. Purity of the distillate products remained acceptable. It was then concluded that it is not necessary to add hold-up values in a more complex ChemCAD simulation for accurate results.
 
@@ -292,15 +292,7 @@ $$
 This gives:
 
 $$
-S=\frac{5.0}{900}\ln\left(\frac{1.0}{0.1}\right)
-$$
-
-$$
-S=0.0128\ \mathrm{m^3/s}
-$$
-
-$$
-S=46.08\ \mathrm{m^3/h}
+S=\frac{5.0}{900}\ln\left(\frac{1.0}{0.1}\right) = 0.0128\ \mathrm{m^3/s} = 46.08\ \mathrm{m^3/h}
 $$
 
 Therefore, the vacuum system must provide a minimum pumping speed of approximately 46 m³/h to achieve the required vacuum level under the desired time.
@@ -312,7 +304,7 @@ The selected vacuum pump is the Busch DOLPHIN VX 0055, a total recirculation liq
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{figs/pumpspecs.png}
-\caption{Dimensional drawing, pumping speed vs flow rate plot, and specifications of the selected pump.}
+\caption{Dimensional drawing, pumping speed vs flow rate plot, and specifications of the selected pump \cite{sulzer_structured_packings_nd}.}
 \label{fig:specifications of the selected pump}
 \end{figure}
 

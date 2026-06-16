@@ -2,7 +2,7 @@
 
 The cost estimation of the distillation system was carried out using preliminary equipment cost correlations. This type of estimation is suitable for conceptual design because it allows the main process equipment costs to be estimated from the principal sizing parameters, such as heat-transfer area, column diameter, column height, tank dimensions, and compressor horsepower. The objective of this chapter is not to obtain a final vendor quotation, but to estimate the relative investment required for the main distillation system and for the two heat recycling alternatives.
 
-The equipment cost correlations were taken from Douglas, where purchased equipment costs are estimated from equipment size and then corrected to installed costs using installation factors. Since the original correlations are based on an older cost index, the Marshall and Swift index correction was applied. The Marshall & Swift index used in this calculation, for the year 2020, was [cite]:
+The equipment cost correlations were taken from Douglas, where purchased equipment costs are estimated from equipment size and then corrected to installed costs using installation factors. Since the original correlations are based on an older cost index, the Marshall and Swift index correction was applied. The Marshall & Swift index used in this calculation, for the year 2020, was [@mondal_jana_2022]:
 
 $MS = 2171.6$
 
@@ -10,7 +10,7 @@ Two tanks were assumed: one tank for the pot charge and one tank for the distill
 
 ## Energy Cost estimation
 
-The energy cost was estimated from the reboiler duty and the additional energy required to heat the DMSO feed from 20°C to 62°C. As of 2013 in the United States, literature reports a general electricity cost of approximately [cite]:
+The energy cost was estimated from the reboiler duty and the additional energy required to heat the DMSO feed from 20°C to 62°C. As of 2013 in the United States, literature reports a general electricity cost of approximately [@kiss_2013]:
 
 $$
 C_{\mathrm{energy}} = 16.8\ \text{\$} / \mathrm{GJ}
@@ -82,7 +82,7 @@ Table: Corrected heat-transfer areas used for cost estimation.
 | Inter-cooler |       5.39 |
 | Pre-heater   |       6.65 |
 
-The purchased cost of a heat exchanger was calculated as [cite]:
+The purchased cost of a heat exchanger was calculated as [@douglas_1988]:
 
 $C_{p,HX} = \frac{MS}{280} \left(101.3 A^{0.65} F_c \right)$
 
@@ -93,15 +93,15 @@ where:
 - $F_c$ = correction factor
 - $MS$ = Marshall and Swift index
 
-The installed cost was calculated using [cite]:
+The installed cost was calculated using [@douglas_1988]:
 
 $C_{i,HX} = \frac{MS}{280} \left(101.3 A^{0.65}(F_c + 2.29)\right)$
 
-Since high-pressure steam was used as the heating utility for the reboiler, its cost was added directly to the installed cost of the reboiler. According to Kiss, the cost of high-pressure steam at 42 bar is [cite]:
+Since high-pressure steam was used as the heating utility for the reboiler, its cost was added directly to the installed cost of the reboiler. The cost of high-pressure steam (at 42 bar) is [@kiss_2013]:
 
 $C_{HPS} = 9.88\ \text{\$/GJ}$
 
-The cost of high-pressure steam was estimated from the reboiler heat duty and the operating time [cite]:
+The cost of high-pressure steam was estimated from the reboiler heat duty and the operating time:
 
 $C_{steam} = Q_{reb} \cdot t \cdot C_{HPS}$
 
@@ -151,7 +151,7 @@ Table: Tank sizing values.
 | Number of tanks   |    $N$ |     2 |    - |
 | Correction factor |  $F_c$ |  1.00 |    - |
 
-The purchased cost of the two tanks was calculated as [cite]:
+The purchased cost of the two tanks was calculated as [@douglas_1988]:
 
 $C_{p,tank} = 2 \frac{MS}{280} \left(101.9 D^{1.066} H^{0.802} F_c \right)$
 
@@ -180,7 +180,7 @@ Table: Column sizing values.
 | Column diameter   |    $D$ |  2.13 |   ft |
 | Correction factor |  $F_c$ |  1.05 |    - |
 
-The purchased cost of the column shell was calculated using [cite]:
+The purchased cost of the column shell was calculated using [@douglas_1988]:
 
 $C_{p,col} = \frac{MS}{280} \left(101.9 D^{1.066} H^{0.802} F_c \right)$
 
@@ -188,7 +188,7 @@ Substituting the selected values:
 
 $C_{p,col} = 30532.95 \text{\$}$
 
-The installed cost of the column shell was calculated as [cite]:
+The installed cost of the column shell was calculated as:
 
 $C_{i,col} = \frac{MS}{280} \left(101.9 D^{1.066} H^{0.802}(F_c + 2.18)\right)$
 
@@ -208,7 +208,7 @@ Table: Compressor power values.
 | Compressor 1 |      36.36 |
 | Compressor 2 |      37.15 |
 
-The purchased compressor cost was calculated using the formula [cite]:
+The purchased compressor cost was calculated using the formula [@douglas_1988]:
 
 $C_{p,comp} = \frac{MS}{280} \left(51.75 HP^{0.82} F_t \right)$
 
@@ -296,7 +296,7 @@ $$
 E_{recovery} = 1000 \times 6.55 = 6550\ \text{MJ} = 6.55\ \text{GJ}
 $$
 
-Using the general energy cost [cite]:
+Using the general energy cost [@kiss_2013]:
 
 $$
 C_{energy} = 16.8\ \text{\$/GJ}

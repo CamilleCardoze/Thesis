@@ -36,7 +36,7 @@ $\Delta T_2 = T_{1,2} - T_{2,2}$
 \label{fig:hemCAD plot displaying the top vapour temperature during step 1}
 \end{figure}
 
-We need to heat up the feed to increase its temperature from 20°C (room temperature) to 62°C. Since the DMSO vapour experiences a phase change (condensation), its temperature can be assumed to remain constant [cite]. The temperatures used in the pre-heater calculation, in Kelvin, are shown below:
+We need to heat up the feed to increase its temperature from 20°C (room temperature) to 62°C. Since the DMSO vapour experiences a phase change (condensation), its temperature can be assumed to remain constant [@bme_heat_exchangers_1_2024]. The temperatures used in the pre-heater calculation, in Kelvin, are shown below:
 
 Table: Pre-heater temperatures.
 \label{tab:Pre-heater temperatures}
@@ -72,7 +72,7 @@ Table: Pre-heater heat duty.
 | LMTD                    | $\Delta T_{log}$ | 37.57 |    K |
 | Heat duty               |              $Q$ | 45.13 | MJ/h |
 
-Three possible heat-transfer areas were calculated using different overall heat-transfer coefficients. The first value, $K_{vap} = 850 \text{ W/m}^2\text{K}$, represents the assumed overall heat-transfer coefficient for a change of phase in a heat exchanger. The second value, $K_{dist} = 570 \text{ W/m}^2\text{K}$ [cite], represents an estimation of the required heat-transfer coefficient for the condensation of IPA vapour. The third value, $K_{calc} = 534.4 \text{ W/m}^2\text{K}$, represents the calculated overall heat-transfer coefficient used for the final conservative sizing. This is the heat transfer coefficient that was calculated for the main condenser of this column.
+Three possible heat-transfer areas were calculated using different overall heat-transfer coefficients. The first value, $K_{vap} = 850 \text{ W/m}^2\text{K}$, represents the assumed overall heat-transfer coefficient for a change of phase in a heat exchanger. The second value, $K_{dist} = 570 \text{ W/m}^2\text{K}$ [@kiss_2013], represents an estimation of the required heat-transfer coefficient for the condensation of IPA vapour. The third value, $K_{calc} = 534.4 \text{ W/m}^2\text{K}$, represents the calculated overall heat-transfer coefficient used for the final conservative sizing. This is the heat transfer coefficient that was calculated for the main condenser of this column.
 
 The highest calculated heat-transfer area is obtained using the lowest overall heat-transfer coefficient:
 
@@ -216,9 +216,9 @@ The logarithmic mean temperature difference calculated was:
 
 $\Delta T_{log} = 88.46 \text{ K}$
 
-Assuming the inter-cooler is a single pass heat exchanger, the correction factor F was calculated to be 1 from correction factor graph for a single-pass heat exchanger [cite book].
+Assuming the inter-cooler is a single pass heat exchanger, the correction factor F was calculated to be 1 from correction factor graph for a single-pass heat exchanger [@coulson_richardson_shell_tube_nd].
 
-Using $K = 150 \text{ W/m}^2\text{K}$ [cite book], The heat-transfer area was calculated using the heat transfer area equation for heat exchangers:
+Using $K = 150 \text{ W/m}^2\text{K}$ [@perry_green_2008_heat_mass_transfer], The heat-transfer area was calculated using the heat transfer area equation for heat exchangers:
 
 $A = \frac{6688.01}{150 \times 88.46} = 0.501 \text{ m}^2$
 

@@ -2,7 +2,7 @@
 
 ## Column Condenser Design
 
-The condenser was designed as a counter-current, one-pass shell-and-tube heat exchanger used to condense the IPA-rich vapour leaving the top of the distillation column. A one-pass shell-and-tube heat exchanger is suitable for the column condenser because it avoids unnecessary mechanical complexity, reduces the number of flow reversals, and helps keep the pressure drop low. Since the required heat-transfer area can be achieved with a simple tube bundle, this arrangement is sufficient [cite].
+The condenser was designed as a counter-current, one-pass shell-and-tube heat exchanger used to condense the IPA-rich vapour leaving the top of the distillation column. A one-pass shell-and-tube heat exchanger is suitable for the column condenser because it avoids unnecessary mechanical complexity, reduces the number of flow reversals, and helps keep the pressure drop low. Since the required heat-transfer area can be achieved with a simple tube bundle, this arrangement is sufficient [@coulson_richardson_shell_tube_nd].
 
 The total heat-transfer area listed in the calculation corresponds to the total available outside tube surface area. The IPA properties used for the condensation-side calculation were obtained from ChemCAD's reports, while the cooling-water properties were taken from literature [cite].
 
@@ -39,7 +39,7 @@ The correction factor was calculated as:
 
 $F_T = 1$
 
-from [cite]:
+from [@coulson_richardson_shell_tube_nd]:
 
 \begin{figure}[H]
 \centering
@@ -67,7 +67,7 @@ Converting to watts:
 
 $Q = \frac{957.7 \times 10^6}{3600} = 266027.78 \text{ W}$
 
-Using the initially assumed overall heat-transfer coefficient for phase change [cite]:
+Using the initially assumed overall heat-transfer coefficient for phase change [@kiss_2013]:
 
 $K = 850 \text{ W/m}^2\text{K}$
 
@@ -77,7 +77,7 @@ $A = \frac{266027.78}{850 \times 41.24} = 7.59 \text{ m}^2$
 
 This value was used only as an initial estimate. A corrected design was then obtained by calculating the individual heat-transfer coefficients, the wall resistance, and the fouling resistance.
 
-The clean overall heat-transfer coefficient was calculated from the thermal resistance relationship [cite lecture]:
+The clean overall heat-transfer coefficient was calculated from the thermal resistance relationship [@perry_green_2008_heat_mass_transfer]:
 
 $$ \frac{1}{K\_{clean}} = \frac{1}{\alpha\_{w,out}} + \frac{x\_{tube}}{\lambda\_{wall}} + \frac{1}{\alpha\_{cond}} $$
 
@@ -87,25 +87,25 @@ As it is a widely used, affordable material, we decided to use carbon steel as t
 
 $\lambda_{wall} = 45 \text{ W/mK}$
 
-The water-side Reynolds number was calculated using [cite lecture]:
+The water-side Reynolds number was calculated using [@bme_heat_exchangers_2_2024]:
 
-$Re = \frac{\rho v D_i}{\mu}$
+$Re = \frac{\rho v D_in}{\mu}$
 
-The Prandtl number was calculated using [cite lecture]:
+The Prandtl number was calculated using [@bme_heat_exchangers_2_2024]:
 
 $Pr = \frac{\mu c_p}{\lambda}$
 
-The Nusselt number used in the worksheet was [cite lecture]:
+The Nusselt number used in the worksheet was [@bme_heat_exchangers_2_2024]:
 
 $Nu = 0.3 Re^{0.5} Pr^{1/3}$
 
-The water-side heat-transfer coefficient was then calculated from [cite lecture]:
+The water-side heat-transfer coefficient was then calculated from [@bme_heat_exchangers_2_2024]:
 
-$\alpha_{w,in} = \frac{Nu \lambda_w}{D_i}$
+$\alpha_{w,in} = \frac{Nu \lambda_w}{D_in}$
 
 Since the total heat-transfer area was based on the outside tube surface, the water-side coefficient was converted to the outside area basis:
 
-$\alpha_{w,out} = \alpha_{w,in} \frac{D_i}{D_o}$
+$\alpha_{w,out} = \alpha_{w,in} \frac{D_in}{D_out}$
 
 The calculated condenser coefficients were:
 
@@ -121,7 +121,7 @@ Table: Condenser heat transfer coefficients.
 | Fouling resistance                    |            $R_f$ |  0.0005 | m²K/W |
 | Dirty overall coefficient             |      $K_{dirty}$ |  534.40 | W/m²K |
 
-Fouling resistance was obtained from literature [cite book].
+Fouling resistance was obtained from literature [@perry_green_2008_heat_mass_transfer].
 
 The dirty overall heat-transfer coefficient was calculated by adding the fouling resistance:
 
@@ -147,8 +147,8 @@ Table: Selected and calculated condenser geometry.
 | Parameter             |         Symbol |   Value | Unit |
 | --------------------- | -------------: | ------: | ---: |
 | Number of tubes       |            $N$ |      48 |    - |
-| Tube outside diameter |          $D_o$ |   0.020 |    m |
-| Tube inside diameter  |          $D_i$ |   0.016 |    m |
+| Tube outside diameter |        $D_out$ |   0.020 |    m |
+| Tube inside diameter  |         $D_in$ |   0.016 |    m |
 | Tube wall thickness   |     $x_{tube}$ |   0.002 |    m |
 | Tube pitch            |          $p_t$ |   0.025 |    m |
 | Tube length           |            $L$ |   4.002 |    m |
@@ -159,9 +159,9 @@ Table: Selected and calculated condenser geometry.
 | Shell length          |    $L_{shell}$ |   4.028 |    m |
 | Baffle spacing        |              - |  0.0486 |    m |
 
-The tube outside diameter, tube thickness, tube pitch and shell clearance values were amongst those recommended by literature [cite book]. Similarly, the formulas for the bundle diameter, shell thickness, shell diameter and and shell length were given:
+The tube outside diameter, tube thickness, tube pitch and shell clearance values were amongst those recommended by literature [@coulson_richardson_shell_tube_nd]. Similarly, the formulas for the bundle diameter, shell thickness, shell diameter and and shell length were given:
 
-$D_{bundle} = D_o \left(\frac{N_t}{a}\right)^{1/b}$
+$D_{bundle} = D_out \left(\frac{N_t}{a}\right)^{1/b}$
 
 For the selected one-pass square-pitch arrangement, the constants used were:
 
@@ -177,11 +177,11 @@ where $P$ is the operating pressure, $S$ is the allowable stress of the shell ma
 
 $L_{shell} = L + 2C_{shell} + x_{shell}$
 
-The number of tubes was arbitrarily selected to comply with length recommendations and the chosen array. Inversely, tube length was calculated with the following formula [cite lecture]:
+The number of tubes was arbitrarily selected to comply with length recommendations and the chosen array. Inversely, tube length was calculated with the following formula [@bme_heat_exchangers_2_2024]:
 
-$$L = \frac{A}{N \pi D_o}$$
+$$L = \frac{A}{N \pi D_out}$$
 
-The selected tube layout is a square, 90° tube array for shell-and-tube heat exchangers [cite]. This arrangement is suitable for the condenser because it gives a simple and compact tube bundle geometry, while also allowing easier mechanical cleaning between tube rows compared with triangular layouts. This is useful for a preliminary design, since the condenser may require periodic inspection or cleaning due to possible solvent impurities.
+The selected tube layout is a square, 90° tube array for shell-and-tube heat exchangers [@coulson_richardson_shell_tube_nd]. This arrangement is suitable for the condenser because it gives a simple and compact tube bundle geometry, while also allowing easier mechanical cleaning between tube rows compared with triangular layouts. This is useful for a preliminary design, since the condenser may require periodic inspection or cleaning due to possible solvent impurities.
 
 \begin{figure}[H]
 \centering
@@ -192,7 +192,7 @@ The selected tube layout is a square, 90° tube array for shell-and-tube heat ex
 
 The available outside tube surface area was checked using:
 
-$A = N \pi D_o L$
+$A = N \pi D_out L$
 
 $A = 48 \pi (0.020)(4.002)$
 
@@ -200,7 +200,7 @@ $A = 12.07 \text{ m}^2$
 
 Therefore, the selected condenser geometry provides the required total heat-transfer area.
 
-The cooling-water mass flow rate was calculated from the sensible heat balance [cite lecture]:
+The cooling-water mass flow rate was calculated from the sensible heat balance [@bme_heat_exchangers_2_2024]:
 
 $Q = \dot{m}_w c_{p,w} \Delta T_w$
 
@@ -255,9 +255,9 @@ The small difference between the real and calculated wall temperatures shows tha
 
 The reboiler was designed as a kettle reboiler. Although it is not a traditional shell-and-tube heat exchanger in the same way as the condenser, it still uses a tube bundle to transfer heat from condensing steam to the process liquid. The reboiler was designed as a two-pass heat exchanger arrangement, with the listed heat-transfer area representing the total heat-transfer area.
 
-A kettle reboiler is more suitable for this project than a jacketed tank or internal coils since they are mainly used for heating agitated vessels, where the liquid temperature changes with time. In this case, the required duty is continuous vaporization at the bottom of the column. A kettle reboiler provides a submerged tube bundle with a large heat-transfer surface, allowing the liquid to boil directly on the shell side while also providing enough volume for vapour-liquid disengagement. [cite]
+A kettle reboiler is more suitable for this project than a jacketed tank or internal coils since they are mainly used for heating agitated vessels, where the liquid temperature changes with time. In this case, the required duty is continuous vaporization at the bottom of the column. A kettle reboiler provides a submerged tube bundle with a large heat-transfer surface, allowing the liquid to boil directly on the shell side while also providing enough volume for vapour-liquid disengagement. [@perry_green_2008_heat_mass_transfer]
 
-The DMSO-rich liquid properties were obtained from ChemCAD using the relevant column-bottom composition, while the steam-side properties were obtained from a saturated steam table by interpolation [cite steam table source].
+The DMSO-rich liquid properties were obtained from ChemCAD using the relevant column-bottom composition, while the steam-side properties were obtained from a saturated steam table by interpolation [@cengel_ghajar_2011].
 
 In this case, it was not necessary to calculate the logarithmic temperature difference, since we chose the steam temperature and we know the temperature of the bottoms. Furthermore, the heat duty is known.
 
@@ -335,7 +335,7 @@ $A = \frac{277777.78}{850 \times 30} = 10.89 \text{ m}^2$
 
 This initial estimate was corrected by calculating the individual boiling-side and steam-condensation-side heat-transfer coefficients.
 
-The boiling-side heat-transfer coefficient for the process was calculated using the pool-boiling correlation [cite book]:
+The boiling-side heat-transfer coefficient for the process was calculated using the pool-boiling correlation [@perry_green_2008_heat_mass_transfer]:
 
 $\alpha_{boiling} = 0.225 \left[\left(\frac{Q \cdot c_p}{A \cdot r}\right)^{0.69}
 \left(\frac{P \cdot \lambda}{\sigma}\right)^{0.31}
@@ -358,9 +358,9 @@ These values for DMSO were obtained from ChemCAD reports.
 
 $\alpha_{shell} = 2261.06 \text{ W/m}^2\text{K}$
 
-The steam-side condensation coefficient was calculated using the filmwise-condensation method. The inside coefficient was first calculated and then converted to the outside tube surface basis [cite book]:
+The steam-side condensation coefficient was calculated using the filmwise-condensation method. The inside coefficient was first calculated and then converted to the outside tube surface basis [@bme_heat_exchangers_2_2024]:
 
-$\alpha_{st,out} = \alpha_{st,in} \frac{D_i}{D_o}$
+$\alpha_{st,out} = \alpha_{st,in} \frac{D_in}{D_out}$
 
 The calculated reboiler heat-transfer coefficients were:
 
@@ -380,7 +380,7 @@ The clean overall heat-transfer coefficient was calculated as:
 
 $\frac{1}{K_{clean}} = \frac{1}{\alpha_{st,out}} + \frac{x_{tube}}{\lambda_{wall}} + \frac{1}{\alpha_{shell}}$
 
-The dirty overall heat-transfer coefficient was calculated by including the fouling resistance [cite book]:
+The dirty overall heat-transfer coefficient was calculated by including the fouling resistance [@perry_green_2008_heat_mass_transfer]:
 
 $\frac{1}{K_{dirty}} = \frac{1}{K_{clean}} + R_f$
 
@@ -415,8 +415,8 @@ Table: Selected and calculated reboiler geometry.
 | Parameter             |         Symbol |   Value | Unit |
 | --------------------- | -------------: | ------: | ---: |
 | Number of tubes       |            $N$ |      28 |    - |
-| Tube outside diameter |          $D_o$ |  0.0250 |    m |
-| Tube inside diameter  |          $D_i$ |  0.0210 |    m |
+| Tube outside diameter |        $D_out$ |  0.0250 |    m |
+| Tube inside diameter  |         $D_in$ |  0.0210 |    m |
 | Tube wall thickness   |     $x_{tube}$ | 0.00202 |    m |
 | Tube pitch            |          $p_t$ |  0.0313 |    m |
 | Tube length           |            $L$ |   1.777 |    m |
@@ -427,9 +427,9 @@ Table: Selected and calculated reboiler geometry.
 
 The tube length was calculated from the total required heat-transfer area:
 
-$L = \frac{A}{2N \pi D_o}$
+$L = \frac{A}{2N \pi D_out}$
 
-The factor of 2 is included because the reboiler was designed with a two-pass tube arrangement [cite lecture].
+The factor of 2 is included because the reboiler was designed with a two-pass tube arrangement [@bme_heat_exchangers_2_2024].
 
 Substituting the values:
 
@@ -479,7 +479,7 @@ All calculated parameters are realistic for the scale of our process and adequat
 
 ## Selection of Heat Exchanger Construction Types
 
-The condenser was selected as a conventional one-pass shell-and-tube heat exchanger. Since the exchanger is relatively small and the temperature difference is moderate, a fixed-tube-sheet construction is suitable. For the front-end stationary head, a removable channel and cover is selected so that the tube side can be accessed for inspection and cleaning. The selected front-end type is therefore TEMA type A [cite book]. The shell is selected as a one-pass shell, corresponding to TEMA shell type E. The rear-end head is selected as a fixed-tube-sheet rear channel with removable cover, corresponding to TEMA rear-end type L. Therefore, the selected condenser construction is:
+The condenser was selected as a conventional one-pass shell-and-tube heat exchanger. Since the exchanger is relatively small and the temperature difference is moderate, a fixed-tube-sheet construction is suitable. For the front-end stationary head, a removable channel and cover is selected so that the tube side can be accessed for inspection and cleaning. The selected front-end type is therefore TEMA type A [@coulson_richardson_shell_tube_nd]. The shell is selected as a one-pass shell, corresponding to TEMA shell type E. The rear-end head is selected as a fixed-tube-sheet rear channel with removable cover, corresponding to TEMA rear-end type L. Therefore, the selected condenser construction is:
 
 $AEL$
 
@@ -492,7 +492,7 @@ where:
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/arrange.png}
-\caption{TEMA-type designations for shell-and-tube heat exchangers [cite].}
+\caption{TEMA-type designations for shell-and-tube heat exchangers.}
 \label{fig:TEMA-type designations for shell-and-tube heat exchangers}
 \end{figure}
 

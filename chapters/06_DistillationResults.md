@@ -80,7 +80,7 @@ In this case, extensive sensitivity analyses were not carried out, since our inv
 
 The stop values were chosen according to the purpose of each additional distillation step. In step 2, the objective is not to obtain a final pure product, but to remove the remaining IPA-rich fraction before the main water recovery step. Therefore, the step is stopped when the accumulator reaches a high water content, indicating that most of the remaining IPA has already been removed from the bottom mixture. In step 3, the goal is to recover water as a final product, so a much stricter stop value is used: the accumulator must reach approximately pure water. In step 4, the objective is to recover the DMSO remaining in the bottom tank, so the process is continued until the bottom product reaches the required DMSO purity.
 
-And our chosen reflux ratio for each step were chosen in a small iteration process, using values ranging from 2 to 5 R [cite source]. After 4 iterations were carried out for each step, the following values yielded the best results in the least possible amount of time:
+And our chosen reflux ratio for each step were chosen in a small iteration process, using values ranging from 2 to 5 R [@bme_distillation_notes_v_nd]. After 4 iterations were carried out for each step, the following values yielded the best results in the least possible amount of time:
 
 - R for step 2: 5
 - R for step 3: 4

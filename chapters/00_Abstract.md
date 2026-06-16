@@ -9,4 +9,3 @@ Material recovery strategies were also investigated by recycling run-off streams
 Overall, the results show that batch extractive distillation with DMSO is a technically feasible method for regenerating high-purity IPA from pharmaceutical waste solvent streams. The proposed process combines solvent recovery, material recycling, and heat integration, making it a promising approach for reducing waste and improving the economic and environmental performance of solvent regeneration.
 
 \newpage
-\pagenumbering{arabic}

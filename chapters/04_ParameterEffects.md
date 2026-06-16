@@ -36,7 +36,7 @@ Constant values:
   - 0.34 mole fraction water
 - Feed composition: 1 mole fraction DMSO (theoretically)
 
-We have adhered to an interval of 15-30 for the number of stages, 5-10 kmol/h for the feed rate, 4-8 for the feed stage, 50-70 °C for the feed temperature, and 4-6 for the reflux ratio, as these are common industrial values that have showed good efficiency of separation in literature [cite]. A quite difficult, azeotropic separation calls for many stages and a high R.
+We have adhered to an interval of 15-30 for the number of stages, 5-10 kmol/h for the feed rate, 4-8 for the feed stage, 50-70 °C for the feed temperature, and 4-6 for the reflux ratio, as these are common industrial values that have showed good efficiency of separation in literature [@nemeth_hegely_lang_2019], [@gerbaud_rodriguez_donis_hegely_lang_denes_you_2019]. A quite difficult, azeotropic separation calls for several stages and a high R.
 
 It is worth mentioning that, in simulations where the feed temperature is not being evaluated, a constant feed temperature value of 70֯C is chosen. All parameters were studied in the order in which they will be presented below. For parameters besides feed temperature, their constant values during the initial simulations were the averaged value of the ranges mentioned previously (22 stages, a feed rate of 7.5 kmol/h, a feed in stage number 6, and a reflux ratio of 5).
 
