@@ -15,13 +15,13 @@ The distillate of the mixture is separated from the less volatile substances tha
 
 ## Azeotropes
 
-Azeotropes can be described as a state of equilibrium reached by both the liquid and gaseous phases inside the column, making the separation of the initial mixture impossible. This is due to the fact that both phases meet on the main diagonal line of the equilibrium curve diagram. This would mean that x = y. This condition prevents any more separation from happening, since the equilibrium reached eliminates the gradient needed for further change in the concentrations [cite lecture].
+Azeotropes can be described as a state of equilibrium reached by both the liquid and gaseous phases inside the column, making the separation of the initial mixture impossible. This is due to the fact that both phases meet on the main diagonal line of the equilibrium curve diagram. This would mean that x = y. This condition prevents any more separation from happening, since the equilibrium reached eliminates the gradient needed for further change in the concentrations [cite lecture]. In our case, our azeotrope presents at a mass fraction of 87-88% and a temperature of 80.2 – 80.4 °C. This is due to the interactions between the molecules (see Table 1) of each component in the solution.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\textwidth]{figs/azeotropepic.png}
-\caption{Visual representation of an azeotropic mixtureDiagram of the batch extractive distillation process.}
-\label{fig:Visual representation of an azeotropic mixtureDiagram of the batch extractive distillation process}
+\caption{Visual representation of an azeotropic mixture.}
+\label{fig:Visual representation of an azeotropic mixture}
 \end{figure}
 
 ## Material Recovery in Extractive Distillation

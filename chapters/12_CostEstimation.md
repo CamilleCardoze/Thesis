@@ -128,12 +128,12 @@ The heat exchanger cost results are shown.
 Table: Heat exchanger cost estimation results.
 \label{tab:Heat exchanger cost estimation results.}
 
-| Equipment    | Area [ft²] | $F_c$ | Purchased [$text{\$}$] | Installed [$text{\$}$] |
-| ------------ | ---------: | ----: | ---------------------: | ---------------------: |
-| Condenser    |     112.59 |  0.80 |               13545.58 |               52319.82 |
-| Reboiler     |      84.04 |  1.60 |               22401.64 |               54623.55 |
-| Inter-cooler |       5.39 |  0.80 |                1879.36 |                7259.03 |
-| Pre-heater   |       6.65 |  0.80 |                2154.16 |                8320.45 |
+| Equipment    | Area [ft²] | $F_c$ | Purchased [$\text{\$}$] | Installed [$\text{\$}$] |
+| ------------ | ---------: | ----: | ----------------------: | ----------------------: |
+| Condenser    |     112.59 |  0.80 |                13545.58 |                52319.82 |
+| Reboiler     |      84.04 |  1.60 |                22401.64 |                54623.55 |
+| Inter-cooler |       5.39 |  0.80 |                 1879.36 |                 7259.03 |
+| Pre-heater   |       6.65 |  0.80 |                 2154.16 |                 8320.45 |
 
 The condenser and reboiler are part of the base distillation system. The inter-cooler is only required for the heat pump method, while the pre-heater is only required for the pre-heater heat recycling method. The corrected installed reboiler cost includes the estimated high-pressure steam cost for one complete batch.
 
