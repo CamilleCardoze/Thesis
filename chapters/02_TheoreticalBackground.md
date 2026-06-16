@@ -44,7 +44,7 @@ where Q is the heat duty, k is the overall heat-transfer coefficient, A is the h
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{figs/simpleshell.png}
+\includegraphics[width=0.6\textwidth]{figs/simpleshell.png}
 \caption{Diagram of a single-pass shell and tube heat exchanger.}
 \label{fig:Diagram of a single-pass shell and tube heat exchanger}
 \end{figure}

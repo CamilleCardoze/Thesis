@@ -21,16 +21,15 @@ The initial charge values used for this recycle sequence were 41.18112 kmol IPA 
 Table: Results of the first material recovery method.
 \label{tab: Results of the first material recovery method}
 
-|         B | IPA RO | H₂O RO | xIPA RO |   mRO | nIPA Chg. | nH₂O Chg. | xH₂O Chg. | xIPA Chg. | xIPA Dist. |  mDist. |     t |
-| --------: | -----: | -----: | ------: | ----: | --------: | --------: | --------: | --------: | ---------: | ------: | ----: |
-|           |   kmol |   kmol |       - |    kg |      kmol |      kmol |         - |         - |          - |      kg |     h |
-|         1 |   1.30 |   5.29 |  0.1975 | 173.6 |     42.48 |     26.51 |    0.3842 |    0.6158 |     0.9985 |  2397.4 |  16.1 |
-|         2 |   1.71 |   7.04 |  0.1957 | 229.9 |     42.90 |     28.26 |    0.3971 |    0.6029 |     0.9989 |  2477.9 |  18.2 |
-|         3 |   1.68 |   6.71 |  0.1999 | 221.6 |     42.86 |     27.92 |    0.3945 |    0.6055 |     0.9985 |  2477.2 |  18.5 |
-|         4 |   1.65 |   6.73 |  0.1971 | 220.6 |     42.83 |     27.94 |    0.3948 |    0.6052 |     0.9985 |  2477.1 |  18.8 |
-|         5 |   1.80 |   7.36 |  0.1963 | 240.6 |     42.98 |     28.57 |    0.3993 |    0.6007 |     0.9990 |  2466.7 |  19.5 |
-|         6 |   1.74 |   7.04 |  0.1977 | 231.1 |     42.92 |     28.25 |    0.3970 |    0.6030 |     0.9987 |  2479.4 |  19.8 |
-| Tot./Avg. |      - |      - |       - |     - |         - |         - |         - |         - |     0.9987 | 14775.7 | 111.1 |
+|   B | IPA RO | H₂O RO | xIPA RO |   mRO | nIPA Chg. | nH₂O Chg. | xH₂O Chg. | xIPA Chg. | xIPA Dist. | mDist. |    t |
+| --: | -----: | -----: | ------: | ----: | --------: | --------: | --------: | --------: | ---------: | -----: | ---: |
+|     |   kmol |   kmol |       - |    kg |      kmol |      kmol |         - |         - |          - |     kg |    h |
+|   1 |   1.30 |   5.29 |  0.1975 | 173.6 |     42.48 |     26.51 |    0.3842 |    0.6158 |     0.9985 | 2397.4 | 16.1 |
+|   2 |   1.71 |   7.04 |  0.1957 | 229.9 |     42.90 |     28.26 |    0.3971 |    0.6029 |     0.9989 | 2477.9 | 18.2 |
+|   3 |   1.68 |   6.71 |  0.1999 | 221.6 |     42.86 |     27.92 |    0.3945 |    0.6055 |     0.9985 | 2477.2 | 18.5 |
+|   4 |   1.65 |   6.73 |  0.1971 | 220.6 |     42.83 |     27.94 |    0.3948 |    0.6052 |     0.9985 | 2477.1 | 18.8 |
+|   5 |   1.80 |   7.36 |  0.1963 | 240.6 |     42.98 |     28.57 |    0.3993 |    0.6007 |     0.9990 | 2466.7 | 19.5 |
+|   6 |   1.74 |   7.04 |  0.1977 | 231.1 |     42.92 |     28.25 |    0.3970 |    0.6030 |     0.9987 | 2479.4 | 19.8 |
 
 The IPA distillate purity remained consistently above the required value in all six batches. The average IPA distillate purity was 0.9987 mol fraction, while the total recovered IPA distillate mass was 14775.70 kg. The total operating time for the six batches was 111.10 h. A slight increase in operating time can be observed from Batch 1 to Batch 6, which is expected because the recycled IPA/water run-off changes the initial pot composition of each new batch.
 
@@ -39,16 +38,15 @@ The IPA distillate purity remained consistently above the required value in all 
 Table: Water/DMSO run-off obtained during method 1.
 \label{tab:Water/DMSO run-off obtained uring method 1}
 
-|         B |   H₂O |  DMSO |   xH₂O |  xDMSO | mTotal |
-| --------: | ----: | ----: | -----: | -----: | -----: |
-|           |  kmol |  kmol |      - |      - |     kg |
-|         1 |  3.29 | 15.92 | 0.1713 | 0.8287 | 1302.9 |
-|         2 |  2.47 | 15.75 | 0.1356 | 0.8644 | 1275.1 |
-|         3 |  2.57 | 16.01 | 0.1382 | 0.8618 | 1297.5 |
-|         4 |  2.60 | 15.98 | 0.1398 | 0.8602 | 1295.3 |
-|         5 |  2.06 | 15.48 | 0.1176 | 0.8824 | 1246.8 |
-|         6 |  2.00 | 15.56 | 0.1139 | 0.8861 | 1252.1 |
-| Tot./Avg. | 14.99 | 94.70 |      - | 0.8639 | 7669.8 |
+|   B |  H₂O |  DMSO |   xH₂O |  xDMSO | mTotal |
+| --: | ---: | ----: | -----: | -----: | -----: |
+|     | kmol |  kmol |      - |      - |     kg |
+|   1 | 3.29 | 15.92 | 0.1713 | 0.8287 | 1302.9 |
+|   2 | 2.47 | 15.75 | 0.1356 | 0.8644 | 1275.1 |
+|   3 | 2.57 | 16.01 | 0.1382 | 0.8618 | 1297.5 |
+|   4 | 2.60 | 15.98 | 0.1398 | 0.8602 | 1295.3 |
+|   5 | 2.06 | 15.48 | 0.1176 | 0.8824 | 1246.8 |
+|   6 | 2.00 | 15.56 | 0.1139 | 0.8861 | 1252.1 |
 
 The water/DMSO run-off contains a significant amount of DMSO, with an average DMSO mole fraction of 0.8639. Since this stream is not directly returned to the next batch in Method 1, it remains available for a later recovery distillation. This prevents additional DMSO accumulation in the main IPA recovery process, but requires an additional recovery step.
 
@@ -57,16 +55,15 @@ The water/DMSO run-off contains a significant amount of DMSO, with an average DM
 Table: DMSO bottom product obtained during method 1.
 \label{tab:DMSO bottom product obtained during method 1}
 
-|         B |  DMSO |    H₂O |  xDMSO |    xH₂O |   mTotal |
-| --------: | ----: | -----: | -----: | ------: | -------: |
-|           |  kmol |   kmol |      - |       - |       kg |
-|         1 | 51.96 | 0.0255 | 0.9995 | 0.00049 |  4060.02 |
-|         2 | 53.20 | 0.0253 | 0.9995 | 0.00047 |  4157.48 |
-|         3 | 53.70 | 0.0252 | 0.9995 | 0.00047 |  4195.97 |
-|         4 | 53.73 | 0.0256 | 0.9995 | 0.00048 |  4198.89 |
-|         5 | 53.85 | 0.0253 | 0.9995 | 0.00047 |  4207.86 |
-|         6 | 54.14 | 0.0248 | 0.9995 | 0.00046 |  4230.33 |
-| Tot./Avg. |     - |      - | 0.9995 |       - | 25050.56 |
+|   B |  DMSO |    H₂O |  xDMSO |    xH₂O |  mTotal |
+| --: | ----: | -----: | -----: | ------: | ------: |
+|     |  kmol |   kmol |      - |       - |      kg |
+|   1 | 51.96 | 0.0255 | 0.9995 | 0.00049 | 4060.02 |
+|   2 | 53.20 | 0.0253 | 0.9995 | 0.00047 | 4157.48 |
+|   3 | 53.70 | 0.0252 | 0.9995 | 0.00047 | 4195.97 |
+|   4 | 53.73 | 0.0256 | 0.9995 | 0.00048 | 4198.89 |
+|   5 | 53.85 | 0.0253 | 0.9995 | 0.00047 | 4207.86 |
+|   6 | 54.14 | 0.0248 | 0.9995 | 0.00046 | 4230.33 |
 
 The DMSO bottom product remained highly pure throughout the recycle sequence, with an average DMSO mole fraction of 0.9995. This confirms that the recovered bottom DMSO can be reused as solvent feed in the following batch. However, the recovered amount is not enough to supply a full new batch, so external pure DMSO would still be required in practice.
 
@@ -83,16 +80,15 @@ The same initial charge values were used as in Method 1: 41.18112 kmol IPA and 2
 Table: Results of the second material recovery method.
 \label{tab:Results of the second material recovery method}
 
-|         B | IPA RO | H₂O RO | DMSO RO |    mRO | nIPA Chg. | nH₂O Chg. | xIPA Chg. | xH₂O Chg. | xDMSO Chg. | xIPA Dist. |  mDist. |     t |
-| --------: | -----: | -----: | ------: | -----: | --------: | --------: | --------: | --------: | ---------: | ---------: | ------: | ----: |
-|           |   kmol |   kmol |    kmol |     kg |      kmol |      kmol |         - |         - |          - |          - |      kg |     h |
-|         1 |   1.30 |   8.58 |   15.92 | 1476.5 |     42.48 |     29.80 |    0.4817 |    0.3378 |     0.1805 |     0.9985 |  2397.4 |  16.1 |
-|         2 |   1.98 |  11.11 |   19.26 | 1824.0 |     43.17 |     32.32 |    0.4556 |    0.3411 |     0.2033 |     0.9989 |  2468.5 |  19.7 |
-|         3 |   2.10 |   11.9 |   20.43 | 1936.6 |     43.28 |     33.08 |    0.4471 |    0.3417 |     0.2111 |     0.9988 | 2468.52 |  20.7 |
-|         4 |   2.06 |  11.23 |   20.26 | 1909.2 |     43.24 |     32.44 |    0.4507 |    0.3381 |     0.2112 |     0.9985 |  2478.1 |  21.9 |
-|         5 |   2.03 |  11.77 |   20.93 | 1969.6 |     43.21 |     32.98 |    0.4449 |    0.3396 |     0.2155 |     0.9985 |  2477.4 |  20.8 |
-|         6 |   2.19 |  12.33 |   21.00 | 1994.2 |     43.37 |     33.54 |    0.4429 |    0.3426 |     0.2145 |     0.9989 |  2465.9 |  21.0 |
-| Tot./Avg. |      - |      - |       - |  11110 |         - |         - |         - |         - |          - |     0.9987 | 14755.9 | 120.4 |
+|   B | IPA RO | H₂O RO | DMSO RO |    mRO | nIPA Chg. | nH₂O Chg. | xIPA Chg. | xH₂O Chg. | xDMSO Chg. | xIPA Dist. |  mDist. |    t |
+| --: | -----: | -----: | ------: | -----: | --------: | --------: | --------: | --------: | ---------: | ---------: | ------: | ---: |
+|     |   kmol |   kmol |    kmol |     kg |      kmol |      kmol |         - |         - |          - |          - |      kg |    h |
+|   1 |   1.30 |   8.58 |   15.92 | 1476.5 |     42.48 |     29.80 |    0.4817 |    0.3378 |     0.1805 |     0.9985 |  2397.4 | 16.1 |
+|   2 |   1.98 |  11.11 |   19.26 | 1824.0 |     43.17 |     32.32 |    0.4556 |    0.3411 |     0.2033 |     0.9989 |  2468.5 | 19.7 |
+|   3 |   2.10 |   11.9 |   20.43 | 1936.6 |     43.28 |     33.08 |    0.4471 |    0.3417 |     0.2111 |     0.9988 | 2468.52 | 20.7 |
+|   4 |   2.06 |  11.23 |   20.26 | 1909.2 |     43.24 |     32.44 |    0.4507 |    0.3381 |     0.2112 |     0.9985 |  2478.1 | 21.9 |
+|   5 |   2.03 |  11.77 |   20.93 | 1969.6 |     43.21 |     32.98 |    0.4449 |    0.3396 |     0.2155 |     0.9985 |  2477.4 | 20.8 |
+|   6 |   2.19 |  12.33 |   21.00 | 1994.2 |     43.37 |     33.54 |    0.4429 |    0.3426 |     0.2145 |     0.9989 |  2465.9 | 21.0 |
 
 \begin{figure}[H]
 \centering
@@ -119,16 +115,15 @@ The IPA distillate purity remained above the target in all batches, with an aver
 Table: DMSO bottom product obtained during method 2.
 \label{tab:DMSO bottom product obtained during method 2}
 
-|         B |  DMSO |    H₂O |  xDMSO |    xH₂O |  mTotal |
-| --------: | ----: | -----: | -----: | ------: | ------: |
-|           |  kmol |   kmol |      - |       - |      kg |
-|         1 | 51.96 | 0.0255 | 0.9995 | 0.00049 | 4060.02 |
-|         2 | 66.36 | 0.0323 | 0.9995 | 0.00049 | 5185.60 |
-|         3 | 69.66 | 0.0331 | 0.9995 | 0.00048 | 5443.17 |
-|         4 | 71.38 | 0.0343 | 0.9995 | 0.00048 | 5578.05 |
-|         5 | 70.54 | 0.0330 | 0.9995 | 0.00047 | 5512.53 |
-|         6 | 70.77 | 0.0328 | 0.9995 | 0.00046 | 5530.48 |
-| Tot./Avg. |     - |      - | 0.9995 |         |         |
+|   B |  DMSO |    H₂O |  xDMSO |    xH₂O |  mTotal |
+| --: | ----: | -----: | -----: | ------: | ------: |
+|     |  kmol |   kmol |      - |       - |      kg |
+|   1 | 51.96 | 0.0255 | 0.9995 | 0.00049 | 4060.02 |
+|   2 | 66.36 | 0.0323 | 0.9995 | 0.00049 | 5185.60 |
+|   3 | 69.66 | 0.0331 | 0.9995 | 0.00048 | 5443.17 |
+|   4 | 71.38 | 0.0343 | 0.9995 | 0.00048 | 5578.05 |
+|   5 | 70.54 | 0.0330 | 0.9995 | 0.00047 | 5512.53 |
+|   6 | 70.77 | 0.0328 | 0.9995 | 0.00046 | 5530.48 |
 
 \begin{figure}[H]
 \centering
@@ -313,13 +308,6 @@ Therefore, the vacuum system must provide a minimum pumping speed of approximate
 A liquid ring vacuum pump was selected due to its suitability for handling condensable vapors and traces of process fluids. Compared to oil-sealed rotary vane pumps, liquid ring pumps are more tolerant to water vapor and solvent carryover, making them well suited for vacuum distillation applications. Since the process involves water and dimethyl sulfoxide (DMSO), a liquid ring design provides increased operational robustness and reliability [cite].
 
 The selected vacuum pump is the Busch DOLPHIN VX 0055, a total recirculation liquid ring vacuum pump. The manufacturer specifies a nominal pumping speed of 47 m³/h at 60 Hz and an ultimate pressure of 33 mbar absolute. Since the required operating pressure is 100 mbar absolute and the required pumping speed is 46.08 m³/h, the selected pump satisfies both requirements.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{figs/pumppic.png}
-\caption{Picture of the Busch DOLPHIN VX 0055 vacuum pump.}
-\label{fig:Busch DOLPHIN VX 0055 vacuum pump}
-\end{figure}
 
 \begin{figure}[H]
 \centering

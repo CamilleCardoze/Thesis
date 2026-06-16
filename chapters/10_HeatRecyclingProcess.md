@@ -14,7 +14,7 @@ In the pre-heater method, the heat contained in the vapour leaving the top of th
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{figs/preh.png}
+\includegraphics[width=0.7\textwidth]{figs/preh.png}
 \caption{ChemCAD simulation arrangement for the pre-heater calculations.}
 \label{fig:ChemCAD simulation arrangement for the pre-heater calculation}
 \end{figure}
@@ -58,9 +58,7 @@ $Q = 45.1324 \text{ MJ/h}$
 
 This value was converted into watts:
 
-$Q = \frac{45.1324 \times 10^6}{3600}$
-
-$Q = 12536.78 \text{ W}$
+$Q = \frac{45.1324 \times 10^6}{3600} = 12536.78 \text{ W}$
 
 The calculated temperature differences and heat duty are summarized below:
 
@@ -162,7 +160,6 @@ Table: Useful heat pump period.
 | ---------------------- | -----: | ---: |
 | Start time             |   0.05 |    h |
 | End time               |   4.50 |    h |
-| Time step              |   0.05 |    h |
 | Max. HX2 duty          | 169.40 | MJ/h |
 | Max. inter-cooler duty |  24.08 | MJ/h |
 | Max. compressor 1 duty |  97.61 | MJ/h |
@@ -203,9 +200,7 @@ For future cost estimation, the inter-cooler's maximum heat duty and heat transf
 
 Conversion to watts:
 
-$Q_{max} = \frac{24.08 \times 10^6}{3600}$
-
-$Q_{max} = 6688.01 \text{ W}$
+$Q_{max} = \frac{24.08 \times 10^6}{3600} = 6688.01 \text{ W}$
 
 Assuming cooling water is heated from 25°C to 50°C:
 
@@ -213,9 +208,7 @@ $\dot{m}_{w} = \frac{Q}{c_p \Delta T}$
 
 Using $c_p = 4180 \text{ J/kgK}$ and $\Delta T = 25 \text{ K}$:
 
-$\dot{m}_{w} = \frac{6688.01}{4180 \times 25}$
-
-$\dot{m}_{w} = 0.0640 \text{ kg/s}$
+$\dot{m}_{w} = \frac{6688.01}{4180 \times 25} = 0.0640 \text{ kg/s}$
 
 $\dot{m}_{w} = 230.40 \text{ kg/h}$
 
@@ -227,12 +220,10 @@ Assuming the inter-cooler is a single pass heat exchanger, the correction factor
 
 Using $K = 150 \text{ W/m}^2\text{K}$ [cite book], The heat-transfer area was calculated using the heat transfer area equation for heat exchangers:
 
-$A = \frac{6688.01}{150 \times 88.46}$
-
-$A = 0.501 \text{ m}^2$
+$A = \frac{6688.01}{150 \times 88.46} = 0.501 \text{ m}^2$
 
 ## Method Comparison
 
 For the pre-heater method, the recovered overhead-vapour heat is used to heat the feed before it enters the column. The total recovered energy is $45 \times 9.05 = 407.25\ \text{MJ}$. Therefore, only about $(50-45)\times 9.05 = 45.25\ \text{MJ}$ of additional external feed-heating energy would still be required. In comparison, the heat pump method can replace $1000 \times 4.5 = 4500\ \text{MJ}$ of reboiler energy during its useful 4.5 h operating period. However, it also requires compressor energy and inter-cooler energy, equal to 996.345 MJ. The net energy saving of the heat pump method is therefore around 3500 MJ. This is much more energy saved than in the pre-heater method, therefore, the heat pump method is clearly superior from a net energy-saving perspective.
 
-However, with the pre-heater method, the heat pump method is much more complex and requires additional equipment, including two compressors, an inter-cooler, an expansion valve, and additional heat exchangers. Its main disadvantage is that it is only useful for a limited part of the batch operation and requires significant compressor work. For this reason, the heat pump method may be useful as a partial heat-recovery option, but it is more complicated and less broadly applicable than the pre-heater method, as well as more costly.
+However, the heat pump method is much more complex and requires additional equipment, including two compressors, an inter-cooler, an expansion valve, and additional heat exchangers. Its main disadvantage is that it is only useful for a limited part of the batch operation and requires significant compressor work. For this reason, the heat pump method may be useful as a partial heat-recovery option, but it is more complicated and less broadly applicable than the pre-heater method, as well as more costly.

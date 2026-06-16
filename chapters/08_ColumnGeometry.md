@@ -13,7 +13,7 @@ The F factor is a parameter that represents the momentum of our vapour phase. Fr
 \label{fig:Zoomed-in view of the structured packing}
 \end{figure}
 
-In the same catalogue section, we have a graph indicating what HETP (Height Equivalent to one Theoretical Plate) value corresponds to an F factor of 2: 0.4 m (see figure 8.2). The blue line refers to the distillation pressure in mbar.
+In the same catalogue section, we have a graph indicating what HETP (Height Equivalent to one Theoretical Plate) value corresponds to an F factor of 2: 0.4 m (see figure 6.2). The blue line refers to the distillation pressure in mbar.
 
 \begin{figure}[H]
 \centering
@@ -79,9 +79,7 @@ $HETP = 0.4 \text{m}$
 
 Therefore, the required packed height is:
 
-$H = 24 \times 0.4$
-
-$H = 9.6 \text{ m}$
+$H = 24 \times 0.4 = 9.6 \text{ m}$
 
 The selected column height is 9.6 m, which can be rounded up to 10 m to allow for some extra safety space.
 
@@ -162,32 +160,21 @@ Table: Parameters relevant to wall thickness.
 | Parameter                        | Symbol | Value             | Unit |
 | -------------------------------- | ------ | ----------------- | ---- |
 | Design pressure                  | $P$    | 600000            | Pa   |
-| Column diameter                  | $D$    | 0.60              | m    |
 | Column radius                    | $R$    | 0.30              | m    |
 | Allowable stress of carbon steel | $S$    | $120 \times 10^6$ | Pa   |
 | Weld joint efficiency            | $E$    | 0.85              | -    |
 
 Substituting the values:
 
-$t = \frac{600000 \times 0.30}{(120 \times 10^6)(0.85) - 0.6(600000)}$
-
-$t = 0.00177 \text{ m}$
+$t = \frac{600000 \times 0.30}{(120 \times 10^6)(0.85) - 0.6(600000)} = 0.00177 \text{ m}$
 
 $t = 1.77 \text{ mm}$
 
-The calculated theoretical wall thickness is therefore 1.77 mm. However, this value only represents the minimum thickness required to withstand the selected internal design pressure. A corrosion allowance must also be included, especially because carbon steel is used as the construction material. Assuming a corrosion allowance of 3.2 mmc[cite book]:
+The calculated theoretical wall thickness is therefore 1.77 mm. However, this value only represents the minimum thickness required to withstand the selected internal design pressure. A corrosion allowance must also be included, especially because carbon steel is used as the construction material. Assuming a corrosion allowance of 3.2 mm [cite book]:
 
-$t_{\text{final}} = t + C_A$
+$t_{\text{final}} = t + C_A = 1.77 + 3.2 = 4.97 \text{ mm}$
 
-$t_{\text{final}} = 1.77 + 3.2$
-
-$t_{\text{final}} = 4.97 \text{ mm}$
-
-Therefore, the selected practical wall thickness is rounded up to:
-
-$t_{\text{selected}} = 5 \text{ mm}$
-
-The final selected wall thickness of the column for the 6 bar internal pressure case is therefore 5 mm.
+Therefore, the selected practical wall thickness is rounded up to 5 mm.
 
 The column is also later planned to withstand an internal pressure of 0.1 bar. Since the outside of the column is assumed to be at atmospheric pressure, this condition creates an external pressure difference of approximately $P_{\text{external}} = 1.013 - 0.1 = 0.913 \text{ bar}$.
 
@@ -245,11 +232,9 @@ where:
 
 Substituting the selected dimensions:
 
-$V = \frac{\pi (2.0)^2}{4}(2.5)$
+$V = \frac{\pi (2.0)^2}{4}(2.5) = 7.85 \text{ m}^3$
 
-$V = 7.85 \text{ m}^3$
-
-Therefore, the selected tank dimensions provide a total geometrical volume of approximately 7.85 m^3.
+Therefore, the selected tank dimensions provide a total geometrical volume of approximately 7.85 $\text{ m}^3$.
 
 Since this value is greater than the maximum required process volume of 6 m³, the selected tank geometry provides sufficient additional capacity for safe operation. The final selected tank dimensions are therefore:
 

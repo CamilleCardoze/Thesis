@@ -8,6 +8,60 @@ $MS = 2171.6$
 
 Two tanks were assumed: one tank for the pot charge and one tank for the distillate.
 
+## Energy Cost estimation
+
+The energy cost was estimated from the reboiler duty and the additional energy required to heat the DMSO feed from 20°C to 62°C. As of 2013 in the United States, literature reports a general electricity cost of approximately [cite]:
+
+$$
+C_{\mathrm{energy}} = 16.8\ \text{\$} / \mathrm{GJ}
+$$
+
+This value was used as the unit energy cost for the preliminary estimation. The energy cost was calculated by multiplying the total energy demand by this unit cost:
+
+$$
+C = Q_{\mathrm{total}} \cdot C_{\mathrm{energy}}
+$$
+
+For the main IPA distillation step, the reboiler operated for 9.05 h at 1000 MJ/h:
+
+$$
+Q_{\mathrm{reb,main}} = 1000 \cdot 9.05 = 9050\ \mathrm{MJ} = 9.05\ \mathrm{GJ}
+$$
+
+The DMSO feed-heating duty was approximately 50 MJ/h. Since the feed is heated during the main distillation step:
+
+$$
+Q_{\mathrm{feed}} = 50 \cdot 9.05 = 452.5\ \mathrm{MJ} = 0.4525\ \mathrm{GJ}
+$$
+
+Therefore, the total energy required for the main IPA distillation step was:
+
+$$
+Q_{\mathrm{main,total}} = 9.05 + 0.4525 = 9.5025\ \mathrm{GJ}
+$$
+
+$$
+C_{\mathrm{main}} = 9.5025 \cdot 16.8 = 159.64\ \text{\$}
+$$
+
+For the complete process, with a total elapsed time of 16.15 h:
+
+$$
+Q_{\mathrm{reb,total}} = 1000 \cdot 16.15 = 16150\ \mathrm{MJ} = 16.15\ \mathrm{GJ}
+$$
+
+Adding the same feed-heating energy:
+
+$$
+Q_{\mathrm{process,total}} = 16.15 + 0.4525 = 16.6025\ \mathrm{GJ}
+$$
+
+$$
+C_{\mathrm{process}} = 16.6025 \cdot 16.8 = 278.92\ \text{\$}
+$$
+
+Therefore, using the energy cost reported by literature [@kiss_2013], the estimated energy cost is approximately 159.64 $\text{\$}$ for the main IPA distillation step and 278.92 $\text{\$}$ for the complete process.
+
 ## Heat Exchanger Cost Estimation
 
 The heat-transfer areas used for the cost estimation were obtained from the previously calculated exchanger duties and temperature differences.
@@ -113,7 +167,7 @@ Substituting the selected values:
 
 $C_{i,tank} = 201814.01 \text{\$}$
 
-# Column Cost Estimation
+## Column Cost Estimation
 
 The cost of the distillation column was estimated using the column height and diameter. The column dimensions used in the cost estimation are shown in the following table:
 

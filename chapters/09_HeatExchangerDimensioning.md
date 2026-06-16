@@ -19,7 +19,7 @@ $$ Q = K F A \Delta T_m $$
 
 Rearranging for the required heat-transfer area:
 
-$$ A = \frac{Q}{F}{K \Delta T_m} $$
+$$ A = \frac{Q}{K f \Delta T_m} $$
 
 where $Q$ is the condenser heat duty, $K$ is the overall heat-transfer coefficient, $A$ is the total heat-transfer area, $F$ is the correction factor and $\Delta T_m$ is the mean temperature difference. Since the temperature difference between the condensing vapour and cooling water changes along the exchanger, the logarithmic mean temperature difference was used:
 
@@ -27,19 +27,13 @@ $$ \Delta T\_{log} = \frac{\Delta T_1 - \Delta T_2}{\ln \left(\frac{\Delta T_1}{
 
 The IPA vapour was assumed to condense at constant temperature since we are dealing with a phase change, while the cooling water was assumed to be heated up from 25°C (room temperature) to 50°C. Therefore:
 
-$\Delta T_1 = T_{IPA} - T_{w,in}$
+$\Delta T_1 = T_{IPA} - T_{w,in}= 353.15 - 298.15 = 55 \text{ K}$
 
-$\Delta T_1 = 353.15 - 298.15 = 55 \text{ K}$
-
-$\Delta T_2 = T_{IPA} - T_{w,out}$
-
-$\Delta T_2 = 353.15 - 323.15 = 30 \text{ K}$
+$\Delta T_2 = T_{IPA} - T_{w,out} = 353.15 - 323.15 = 30 \text{ K}$
 
 Thus:
 
-$\Delta T_{log} = \frac{55 - 30}{\ln \left(\frac{55}{30}\right)}$
-
-$\Delta T_{log} = 41.24 \text{ K}$
+$\Delta T_{log} = \frac{55 - 30}{\ln \left(\frac{55}{30}\right)} = 41.24 \text{ K}$
 
 The correction factor was calculated as:
 
@@ -56,9 +50,7 @@ from [cite]:
 
 Therefore:
 
-$\Delta T_m = F_T \Delta T_{log}$
-
-$\Delta T_m = 41.24 \text{ K}$
+$\Delta T_m = F_T \Delta T_{log} = 41.24 \text{ K}$
 
 The highest condenser heat duty obtained from the simulation was:
 
@@ -73,9 +65,7 @@ $Q = 957.7 \text{ MJ/h}$
 
 Converting to watts:
 
-$Q = \frac{957.7 \times 10^6}{3600}$
-
-$Q = 266027.78 \text{ W}$
+$Q = \frac{957.7 \times 10^6}{3600} = 266027.78 \text{ W}$
 
 Using the initially assumed overall heat-transfer coefficient for phase change [cite]:
 
@@ -83,9 +73,7 @@ $K = 850 \text{ W/m}^2\text{K}$
 
 the first estimated heat-transfer area was:
 
-$A = \frac{266027.78}{850 \times 41.24}$
-
-$A = 7.59 \text{ m}^2$
+$A = \frac{266027.78}{850 \times 41.24} = 7.59 \text{ m}^2$
 
 This value was used only as an initial estimate. A corrected design was then obtained by calculating the individual heat-transfer coefficients, the wall resistance, and the fouling resistance.
 
@@ -145,9 +133,7 @@ Using the dirty overall heat-transfer coefficient, the final required heat-trans
 
 $A_{calc} = \frac{Q}{K_{dirty} \Delta T_{log}}$
 
-$A_{calc} = \frac{266027.78}{534.40 \times 41.24}$
-
-$A_{calc} = 12.07 \text{ m}^2$
+$A_{calc} = \frac{266027.78}{534.40 \times 41.24} = 12.07 \text{ m}^2$
 
 Therefore, the required total condenser heat-transfer area is:
 
@@ -308,7 +294,7 @@ $$ Q = K A F \Delta T $$
 
 Rearranging for heat-transfer area:
 
-$$ A = \frac{Q}{F}{K \Delta T} $$
+$$ A = \frac{Q}{K F \Delta T} $$
 
 The DMSO-rich liquid temperature was taken as:
 
@@ -320,11 +306,7 @@ $T_{steam} = 220^\circ C$
 
 For an adequate temperature difference of:
 
-$\Delta T = T_{steam} - T_{DMSO}$
-
-$\Delta T = 220 - 190$
-
-$\Delta T = 30 \text{ K}$
+$\Delta T = T_{steam} - T_{DMSO} = 220 - 190 = \Delta T = 30 \text{ K}$
 
 This will allow for proper heat transfer without overheating the DMSO, which properties we will take as reference since it possesses the highest boiling resistance ($\lambda_{DMSO} = 0.157 \ \text{W/(m·K)}$ at 20°C). For stages where DMSO does not make up most of the bottom liquid, the pressure of steam (and therefore the temperature) is to be decreased with a control system. At higher temperatures, a peak and then a rapid decrease in the value of the heat transfer coefficient can be observed [cite book from picture].
 
@@ -341,19 +323,15 @@ $Q = 1000 \text{ MJ/h}$
 
 Converting to watts:
 
-$Q = \frac{1000 \times 10^6}{3600}$
+$Q = \frac{1000 \times 10^6}{3600} = 277777.78 \text{ W}$
 
-$Q = 277777.78 \text{ W}$
-
-Using the initially assumed overall heat-transfer coefficient for phase change [cite book]:
+Using the initially assumed overall heat-transfer coefficient for phase change:
 
 $K = 850 \text{ W/m}^2\text{K}$
 
 the preliminary heat-transfer area was:
 
-$A = \frac{277777.78}{850 \times 30}$
-
-$A = 10.89 \text{ m}^2$
+$A = \frac{277777.78}{850 \times 30} = 10.89 \text{ m}^2$
 
 This initial estimate was corrected by calculating the individual boiling-side and steam-condensation-side heat-transfer coefficients.
 
@@ -380,7 +358,7 @@ These values for DMSO were obtained from ChemCAD reports.
 
 $\alpha_{shell} = 2261.06 \text{ W/m}^2\text{K}$
 
-The steam-side condensation coefficient was calculated using the filmwise-condensation method. The inside coefficient was first calculated and then converted to the outside tube surface basis [cite book}:
+The steam-side condensation coefficient was calculated using the filmwise-condensation method. The inside coefficient was first calculated and then converted to the outside tube surface basis [cite book]:
 
 $\alpha_{st,out} = \alpha_{st,in} \frac{D_i}{D_o}$
 
@@ -423,15 +401,11 @@ from:
 
 Using the dirty overall coefficient, the corrected reboiler heat-transfer area was:
 
-$A_{calc} = \frac{Q}{F}{K_{dirty} \Delta T}$
+$A_{calc} = \frac{Q}{K_{dirty} F \Delta T}$
 
-$A_{calc} = \frac{277777.78}{1}{1183.20 \times 30}$
+$A_{calc} = \frac{277777.78}{1183.20 \times 30} = 7.83 \text{ m}^2$
 
-$A_{calc} = 7.83 \text{ m}^2$
-
-Therefore, the required total reboiler heat-transfer area is:
-
-$A_{reb} = 7.83 \text{ m}^2$
+Therefore, the required total reboiler heat-transfer area is 7.83 $\text{ m}^2$
 
 The selected reboiler geometry was:
 
@@ -459,9 +433,7 @@ The factor of 2 is included because the reboiler was designed with a two-pass tu
 
 Substituting the values:
 
-$L = \frac{7.83}{2(28)\pi(0.0250)}$
-
-$L = 1.78 \text{ m}$
+$L = \frac{7.83}{2(28)\pi(0.0250)} = 1.78 \text{ m}$
 
 Therefore, the selected tube length is 1.78 m.
 
@@ -477,9 +449,7 @@ $r_{st} = 1887700 \text{ J/kg}$
 
 Therefore:
 
-$\dot{m}_{st} = \frac{277777.78}{1887700}$
-
-$\dot{m}_{st} = 0.147 \text{ kg/s}$
+$\dot{m}_{st} = \frac{277777.78}{1887700} = 0.147 \text{ kg/s}$
 
 The main steam-side hydraulic values, using the same formulas as in the previous chapter, were:
 

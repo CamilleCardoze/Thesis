@@ -15,20 +15,9 @@ Table: Binary interaction parameters.
 | Isopropanol | Dimethyl Sulfoxide |    115.279    |   -25.0123    |       0.4       |
 |    Water    | Dimethyl Sulfoxide |    1203.77    |   -524.822    |     0.6615      |
 
-In the table above we can find the binary interaction parameters (BIPs) for our mixture, which are the coefficients to be used in the NRTL thermodynamic model to describe the interactions between pairs of molecules in our mixture. The BIPs describe the excess Gibbs free energy of mixing[@yao_ling_chien_2007].
+In the table above we can find the binary interaction parameters (BIPs) for our mixture, which are the coefficients to be used in the NRTL thermodynamic model to describe the interactions between pairs of molecules in our mixture. The BIPs describe the excess Gibbs free energy of mixing [@yao_ling_chien_2007].
 
 At the beginning of the process, we will start with total reflux (R=∞). After the steady-state is reached, we will be working with an initial reflux ratio of R=6, subject to change as the analysis progresses. In the same manner, we will start with an initial feed temperature of 20°C, 12 stages, feed stage 4, and a feed flow rate of 5 kmol/h.
-
-## Azeotrope Condition
-
-In our case, our azeotrope presents at a mass fraction of 87-88% and a temperature of 80.2 – 80.4 °C. This is due to the interactions between the molecules (see Table 1) of each component in the solution.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.9\textwidth]{figs/Picture1.png}
-\caption{Graphical representation of the azeotrope present in the water/IPA mixture.}
-\label{fig:Graphical representation of the azeotrope present in the water/IPA mixture}
-\end{figure}
 
 ## Residue Curves
 
