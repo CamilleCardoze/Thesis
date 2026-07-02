@@ -44,10 +44,10 @@ The resulting areas were converted from square meters to square feet using:
 
 $1 \text{ m}^2 = 10.764 \text{ ft}^2$
 
-The corrected heat transfer areas used in the cost estimation are shown in the table below, their values converted from meters to feet, in order to follow the calculations from the selected literature.
+The converted heat transfer areas used in the cost estimation are shown in the table below, their values converted from meters to feet, in order to follow the calculations from the selected literature.
 
-Table: Corrected heat transfer areas used for cost estimation.
-\label{tab:Corrected heat transfer areas used for cost estimation.}
+Table: Converted heat transfer areas used for cost estimation.
+\label{tab:Converted heat transfer areas used for cost estimation.}
 
 | Equipment    | Area [ft²] |
 | ------------ | ---------: |
@@ -224,9 +224,9 @@ $$
 C_{packing} = 11236.5 \times 1.45 = 16292.92\ \text{\$}
 $$
 
-## Feed Cost Estimation
+## Solvent Cost Estimation
 
-This subchapter estimates the cost of purchasing DMSO feed and compares it with the energy cost required to recover DMSO from the water/DMSO off-cut stream. Since DMSO is the extractive solvent, recovering it reduces the amount of fresh solvent that must be purchased.
+This subchapter estimates the cost of purchasing the DMSO solvent and compares it with the energy cost required to recover DMSO from the water/DMSO off-cut stream. Recovering it reduces the amount of fresh solvent that must be purchased.
 
 For the DMSO purchase price, a recent European market value was used [@imarc_dmso_pricing_2026]. The price of DMSO in Germany was reported as, after converting the price from EUR to USD as of June 2026:
 
