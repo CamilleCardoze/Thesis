@@ -2,110 +2,101 @@
 
 ## Latin Symbols {- .unlisted}
 
-| Symbol                | Meaning                                                          | Unit             |
-| --------------------- | ---------------------------------------------------------------- | ---------------- |
-| $A$                   | Area                                                             | m²               |
-| $A_{calc}$            | Calculated heat-transfer area                                    | m²               |
-| $A_{cond}$            | Condenser heat-transfer area                                     | m²               |
-| $A_{tube}$            | Tube-side flow area                                              | m²               |
-| $a$                   | Bundle-diameter correlation constant                             | -                |
-| $b$                   | Bundle-diameter correlation exponent                             | -                |
-| $B$                   | Batch number                                                     | -                |
-| $B_{ij}$              | Binary interaction parameter from component $i$ to component $j$ | Cal/mol          |
-| $B_{ji}$              | Binary interaction parameter from component $j$ to component $i$ | Cal/mol          |
-| $C$                   | Cost                                                             | $                |
-| $C_1$                 | Compressor 1                                                     | MJ/h             |
-| $C_2$                 | Compressor 2                                                     | MJ/h             |
-| $C_A$                 | Corrosion allowance                                              | mm or m          |
-| $C_{shell}$           | Shell clearance                                                  | m                |
-| $C_i$                 | Installed cost                                                   | $                |
-| $C_{purchase}$, $C_p$ | Purchase cost                                                    | $                |
-| $C_{total}$           | Total installed cost                                             | $                |
-| $C_{add}$             | Additional installed cost                                        | $                |
-| $c_p$                 | Specific heat capacity                                           | J/(kg·K)         |
-| $D$                   | Diameter                                                         | m                |
-| $D_{bundle}$          | Tube bundle diameter                                             | m                |
-| $E$                   | Weld joint efficiency / Young’s modulus                          | - / Pa           |
-| $E_{recovery}$        | Energy required for the recovery distillation step               | GJ               |
-| $F$                   | F-factor; correction factor                                      | $\sqrt{Pa}$ or - |
-| $F_T$                 | LMTD correction factor                                           | -                |
-| $F_c$                 | Cost correction factor                                           | -                |
-| $F_t$                 | Compressor correction factor                                     | -                |
-| $f$                   | Correction factor                                                | -                |
-| $H$                   | Height                                                           | m                |
-| $HETP$                | Height equivalent to one theoretical plate                       | m                |
-| $HP$                  | Horsepower                                                       | hp               |
-| $HP_1$                | Horsepower of compressor 1                                       | hp               |
-| $HP_2$                | Horsepower of compressor 2                                       | hp               |
-| $I$                   | First component in binary interaction table                      | -                |
-| $J$                   | Second component in binary interaction table                     | -                |
-| $k$                   | heat-transfer coefficient                                        | W/(m²·K)         |
-| $K$                   | Overall heat-transfer coefficient                                | W/(m²·K)         |
-| $K_{vap}$             | Heat-transfer coefficient for vapour                             | W/(m²·K)         |
-| $K_{dist}$            | Heat-transfer coefficient for distillate                         | W/(m²·K)         |
-| $K_{calc}$            | Calculated heat-transfer coefficient                             | W/(m²·K)         |
-| $L$                   | Length                                                           | m                |
-| $L_{shell}$           | Shell length                                                     | m                |
-| $m$                   | Mass                                                             | kg               |
-| $m_{Total}$           | Total mass                                                       | kg               |
-| $\dot{m}$             | Mass flow rate                                                   | kg/s or kg/h     |
-| $MS$                  | Marshall and Swift index                                         | -                |
-| $N$                   | Number of stages                                                 | -                |
-| $N_t$                 | Number of tubes                                                  | -                |
-| $N_{cycles}$          | Number of operating cycles                                       | -                |
-| $n$                   | Amount of substance                                              | kmol             |
-| $n_{IPA}$             | Amount of IPA                                                    | kmol             |
-| $n_{H_2O}$            | Amount of water                                                  | kmol             |
-| $Nu$                  | Nusselt number                                                   | -                |
-| $Nu_w$                | Water-side Nusselt number                                        | -                |
-| $P$                   | Pressure                                                         | Pa, bar, or mbar |
-| $P_1$                 | Initial pressure                                                 | bar abs          |
-| $P_2$                 | Final pressure                                                   | bar abs          |
-| $p$                   | Pitch                                                            | m                |
-| $p_t$                 | Tube pitch                                                       | m                |
-| $Pr$                  | Prandtl number                                                   | -                |
-| $Pr_w$                | Water-side Prandtl number                                        | -                |
-| $Q$                   | Heat duty                                                        | W, MJ/h, or GJ   |
-| $Q_{max}$             | Maximum heat duty                                                | W or MJ/h        |
-| $Q_{reb}$             | Reboiler heat duty                                               | MJ/h or GJ       |
-| $Q_{feed}$            | Feed-heating energy                                              | GJ               |
-| $Q_{total}$           | Total energy demand                                              | GJ               |
-| $R$                   | Reflux ratio                                                     | -                |
-| $R_f$                 | Fouling resistance                                               | m²·K/W           |
-| $Re$                  | Reynolds number                                                  | -                |
-| $Re_w$                | Water-side Reynolds number                                       | -                |
-| $r$                   | Latent heat of vaporization                                      | J/kg             |
-| $r_{st}$              | Latent heat of steam condensation                                | J/kg             |
-| $S$                   | Allowable stress / required pumping speed                        | Pa / m³/s        |
-| $T$                   | Temperature                                                      | K or °C          |
-| $\overline{T}$        | Average temperature                                              | K or °C          |
-| $T_{1,1}$             | Hot-stream inlet temperature                                     | K or °C          |
-| $T_{1,2}$             | Hot-stream outlet temperature                                    | K or °C          |
-| $T_{2,1}$             | Cold-stream inlet temperature                                    | K or °C          |
-| $T_{2,2}$             | Cold-stream outlet temperature                                   | K or °C          |
-| $T_{comp.}$           | Compressor outlet temperature                                    | °C               |
-| $T_{HX1}$             | Temperature after heat exchanger 1                               | °C               |
-| $t$                   | Time                                                             | h or s           |
-| $V$                   | Volume                                                           | m³               |
-| $\dot{V}$             | Vapour volumetric flow rate                                      | m³/s             |
-| $V_{\text{max}}$      | Maximum required volume                                          | m³               |
-| $V_{\text{tank}}$     | Selected tank volume                                             | m³               |
-| $V_{packing}$         | Packing volume                                                   | m³               |
-| $VF$                  | Vapour fraction                                                  | -                |
-| $VF_{comp.}$          | Vapour fraction after compression                                | -                |
-| $VF_{HX1}$            | Vapour fraction after heat exchanger 1                           | -                |
-| $v$                   | Velocity                                                         | m/s              |
-| $x$                   | Liquid mole fraction / wall thickness                            | - / m or mm      |
-| $x_1$                 | First known independent-variable value                           | -                |
-| $x_2$                 | Second known independent-variable value                          | -                |
-| $x_{IPA}$             | IPA mole fraction                                                | -                |
-| $x_{H_2O}$            | Water mole fraction                                              | -                |
-| $x_{DMSO}$            | DMSO mole fraction                                               | -                |
-| $x_{tube}$            | Tube wall thickness                                              | m                |
-| $x_{shell}$           | Shell wall thickness                                             | m                |
-| $y$                   | Vapour mole fraction                                             | -                |
-| $y_1$                 | First known dependent-variable value                             | -                |
-| $y_2$                 | Second known dependent-variable value                            | -                |
+| Symbol            | Meaning                                                          | Unit             |
+| ----------------- | ---------------------------------------------------------------- | ---------------- |
+| $A$               | Area                                                             | m²               |
+| $A_{calc}$        | Calculated heat-transfer area                                    | m²               |
+| $A_{cond}$        | Condenser heat-transfer area                                     | m²               |
+| $A_{tube}$        | Tube-side flow area                                              | m²               |
+| $a$               | Bundle-diameter correlation constant                             | -                |
+| $b$               | Bundle-diameter correlation exponent                             | -                |
+| $B$               | Batch number                                                     | -                |
+| $B_{ij}$          | Binary interaction parameter from component $i$ to component $j$ | cal/mol          |
+| $B_{ji}$          | Binary interaction parameter from component $j$ to component $i$ | cal/mol          |
+| $C$               | Cost                                                             | $                |
+| $C_1$             | Compressor 1                                                     | MJ/h             |
+| $C_2$             | Compressor 2                                                     | MJ/h             |
+| $C_A$             | Corrosion allowance                                              | mm or m          |
+| $C_{shell}$       | Shell clearance                                                  | m                |
+| $C_i$             | Installed cost                                                   | $                |
+| $C_p$             | Purchase cost                                                    | $                |
+| $C_{total}$       | Total installed cost                                             | $                |
+| $C_{add}$         | Additional installed cost                                        | $                |
+| $c_p$             | Specific heat capacity                                           | J/(kg·K)         |
+| $D$               | Diameter                                                         | m                |
+| $D_{bundle}$      | Tube bundle diameter                                             | m                |
+| $E$               | Weld joint efficiency / Young’s modulus                          | - / Pa           |
+| $E_{recovery}$    | Energy required for the recovery distillation step               | GJ               |
+| $F$               | F-factor / LMTD correction factor                                | $\sqrt{Pa}$ / -  |
+| $F_c$             | Cost correction factor                                           | -                |
+| $F_t$             | Compressor correction factor                                     | -                |
+| $H$               | Height                                                           | m                |
+| $HETP$            | Height equivalent to one theoretical plate                       | m                |
+| $HP$              | Horsepower                                                       | hp               |
+| $HP_1$            | Horsepower of compressor 1                                       | hp               |
+| $HP_2$            | Horsepower of compressor 2                                       | hp               |
+| $I$               | First component in binary interaction table                      | -                |
+| $J$               | Second component in binary interaction table                     | -                |
+| $k$               | Overall heat-transfer coefficient                                | W/(m²·K)         |
+| $K_{vap}$         | Heat-transfer coefficient for vapour                             | W/(m²·K)         |
+| $K_{dist}$        | Heat-transfer coefficient for distillate                         | W/(m²·K)         |
+| $K_{calc}$        | Calculated heat-transfer coefficient                             | W/(m²·K)         |
+| $L$               | Length                                                           | m                |
+| $L_{shell}$       | Shell length                                                     | m                |
+| $m$               | Mass                                                             | kg               |
+| $m_{Total}$       | Total mass                                                       | kg               |
+| $\dot{m}$         | Mass flow rate                                                   | kg/s or kg/h     |
+| $MS$              | Marshall and Swift index                                         | -                |
+| $N$               | Number of stages                                                 | -                |
+| $N_t$             | Number of tubes                                                  | -                |
+| $N_{cycles}$      | Number of operating cycles                                       | -                |
+| $n$               | Amount of substance                                              | kmol             |
+| $n_{IPA}$         | Amount of IPA                                                    | kmol             |
+| $n_{H_2O}$        | Amount of water                                                  | kmol             |
+| $Nu$              | Nusselt number                                                   | -                |
+| $Nu_w$            | Water-side Nusselt number                                        | -                |
+| $P$               | Pressure                                                         | Pa, bar, or mbar |
+| $P_1$             | Initial pressure                                                 | bar abs          |
+| $P_2$             | Final pressure                                                   | bar abs          |
+| $p$               | Pitch                                                            | m                |
+| $p_t$             | Tube pitch                                                       | m                |
+| $Pr$              | Prandtl number                                                   | -                |
+| $Pr_w$            | Water-side Prandtl number                                        | -                |
+| $Q$               | Heat duty                                                        | W or MJ/h        |
+| $Q_{max}$         | Maximum heat duty                                                | W or MJ/h        |
+| $Q_{reb}$         | Reboiler heat duty                                               | W or MJ/h        |
+| $Q_{feed}$        | Feed-heating energy                                              | W or MJ/h        |
+| $Q_{total}$       | Total energy demand                                              | GJ               |
+| $R$               | Reflux ratio                                                     | -                |
+| $R_f$             | Fouling resistance                                               | m²·K/W           |
+| $Re$              | Reynolds number                                                  | -                |
+| $r$               | Latent heat of vaporization                                      | J/kg             |
+| $S$               | Allowable stress / required pumping speed                        | Pa / m³/s        |
+| $T$               | Temperature                                                      | K or °C          |
+| $\overline{T}$    | Average temperature                                              | K or °C          |
+| $T_{1,1}$         | Hot-stream inlet temperature                                     | K or °C          |
+| $T_{1,2}$         | Hot-stream outlet temperature                                    | K or °C          |
+| $T_{2,1}$         | Cold-stream inlet temperature                                    | K or °C          |
+| $T_{2,2}$         | Cold-stream outlet temperature                                   | K or °C          |
+| $T_{comp.}$       | Compressor outlet temperature                                    | °C               |
+| $T_{HX1}$         | Temperature after heat exchanger 1                               | °C               |
+| $t$               | Time                                                             | h or s           |
+| $V$               | Volume                                                           | m³               |
+| $\dot{V}$         | Vapour volumetric flow rate                                      | m³/s             |
+| $V_{\text{max}}$  | Maximum required volume                                          | m³               |
+| $V_{\text{tank}}$ | Selected tank volume                                             | m³               |
+| $V_{packing}$     | Packing volume                                                   | m³               |
+| $VF$              | Vapour fraction                                                  | -                |
+| $VF_{comp.}$      | Vapour fraction after compression                                | -                |
+| $VF_{HX1}$        | Vapour fraction after heat exchanger 1                           | -                |
+| $v$               | Velocity                                                         | m/s              |
+| $x$               | Liquid mole fraction / wall thickness                            | - / m or mm      |
+| $x_{IPA}$         | IPA mole fraction                                                | -                |
+| $x_{H_2O}$        | Water mole fraction                                              | -                |
+| $x_{DMSO}$        | DMSO mole fraction                                               | -                |
+| $x_{tube}$        | Tube wall thickness                                              | m                |
+| $x_{shell}$       | Shell wall thickness                                             | m                |
+| $y$               | Vapour mole fraction                                             | -                |
 
 ## Greek Symbols {- .unlisted}
 
@@ -164,7 +155,7 @@
 | `l`                 | Liquid phase                           |
 | `v`                 | Vapour phase                           |
 | `IPA`               | Isopropyl alcohol or isopropanol       |
-| `H₂O` / $H_2O$      | Water                                  |
+| `H₂O`               | Water                                  |
 | `DMSO`              | Dimethyl sulfoxide                     |
 | `RO`                | Run-off stream                         |
 | `Chg.`              | Charge                                 |
@@ -182,7 +173,7 @@
 | `m`                 | Mean or corrected mean                 |
 | `reb`               | Reboiler                               |
 | `main`              | Main IPA distillation step             |
-| `feed`              | Feed-heating contribution              |
+| `feed`              | Relating to the feed                   |
 | `process`           | Complete process                       |
 | `total`             | Total value                            |
 | `recovery`          | Recovery step                          |
@@ -203,7 +194,6 @@
 | `bundle`            | Tube bundle                            |
 | $\dot{(\ )}$        | Flow rate or rate with respect to time |
 | $\overline{(\ )}$   | Average value                          |
-| $R=\infty$          | Total reflux                           |
 | `[-]`               | Dimensionless value                    |
 | `≤`                 | Less than or equal to                  |
 | `≥`                 | Greater than or equal to               |
@@ -218,7 +208,7 @@
 | DMSO         | Dimethyl sulfoxide                          |
 | H₂O          | Water                                       |
 | NRTL         | Non-random two-liquid model                 |
-| BIP / BIPs   | Binary interaction parameter(s)             |
+| BIP          | Binary interaction parameter(s)             |
 | VLE          | Vapour-liquid equilibrium                   |
 | HETP         | Height equivalent to one theoretical plate  |
 | LMTD         | Logarithmic mean temperature difference     |
@@ -250,7 +240,6 @@
 | m²K/W        | Square meter kelvin per watt                |
 | Cal/mol      | Calorie per mole                            |
 | $/GJ         | Dollars per gigajoule                       |
-| €/m³         | Euros per cubic meter                       |
 
 \newpage
 \pagenumbering{arabic}
