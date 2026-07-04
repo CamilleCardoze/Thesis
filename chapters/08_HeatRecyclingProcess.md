@@ -90,7 +90,7 @@ The pre-heater therefore allows the feed to enter the distillation column at the
 
 The second heat recycling method studied was the heat pump method. In this configuration, the vapour leaving the top of the distillation column is compressed. This makes the overhead vapour suitable for heat recovery at a higher temperature level. The recovered heat is then transferred to the bottom of the column, helping the reboiler supply the energy required for vaporization.
 
-Before the final arrangement was selected, different compression ratios were investigated using a single compressor. The purpose of these trials was to determine whether the overhead vapour could be compressed sufficiently in one step to reach a useful temperature level for reboiler heat recovery. Several pressure ratios were tested, but the results showed that a single compressor was not suitable. Lower compression ratios did not increase the temperature enough for useful heat recovery over a sufficient part of the operation, while higher compression ratios produced excessively high outlet temperatures and unsuitable vapour-fraction behavior (the stream does not remain in the vapour phase during compression;condensation should occur only in the heat exchanger where useful heat is released to the reboiler.). Therefore, the final selected configuration used two compressors with an inter-cooler between them. Each compressor was operated with a compression ratio of 1:4.
+Before the final arrangement was selected, different compression ratios were investigated using a single compressor. The purpose of these trials was to determine whether the overhead vapour could be compressed sufficiently in one step to reach a useful temperature level for reboiler heat recovery. Several pressure ratios were tested, but the results showed that a single compressor was not suitable. Lower compression ratios did not increase the temperature enough for useful heat recovery over a sufficient part of the operation, while higher compression ratios produced excessively high outlet temperatures and unsuitable vapour-fraction behavior (the stream does not remain in the vapour phase during compression;condensation should occur only in the heat exchanger where useful heat is released to the reboiler.). Therefore, the final selected configuration used two compressors with an inter-cooler between them. Each compressor was operated with a compression ratio of 4:1.
 
 The simulated heat pump arrangement in ChemCAD is displayed in Figure 8.3. It included two compressors, a first heat exchanger that acted as an inter-cooler between them (unit 1 in the figure), a second heat exchanger (unit 3 in the figure) with a set heat duty of -1000 MJ/h to represent the heat taken out by the reboiler (the heat duty of the reboiler for the all distillation simulations was set to 1000 MJ/h; therefore, theoretically, this amount of energy per hour that will be demanded), an expansion valve, and a third heat exchanger (unit 5 in the figure) that was used to calculate the amount of energy that could be recovered. After supplying heat to the reboiler, the remaining heat indicated by the heat exchanger could theoretically be used for secondary heating duties, such as pre-heating process streams, feed streams, or utility water.
 The inter-cooler was required to reduce the vapour temperature between compression stages and to avoid excessively high temperatures after the second compressor. It was set to superheat the compressed vapour stream in order to keep the working fluid in gaseous state, and cooling was assumed to be done with room-temperature cooling water (25°C). The heat transfer coefficient of the IPA-rich fluid was given as k = 150 $\text{ W/m}^2\text{K}$ by literature [@perry_green_2008_heat_mass_transfer], which was applied as the inter-cooler heat transfer coefficient.
@@ -125,11 +125,11 @@ Table: Heat pump input values.
 |     4.00 |                   96.89 |                       22.8661 |                        0.0075 |                       0.000262 |
 |     4.50 |                   99.75 |                       22.6821 |                        0.0070 |                       0.000262 |
 
-As shown in Table 5, the IPA vapour flow rate slowly decreases during the first 4.5 h, while the bottom temperature increases from approximately 80°C to nearly 100°C. The DMSO vapour flow rate remains very small compared with the IPA vapour flow rate. This is expected because DMSO has a much higher boiling point and remains mainly in the liquid phase.
+As shown in Table 8.3, the IPA vapour flow rate slowly decreases during the first 4.5 h, while the bottom temperature increases from approximately 80°C to nearly 100°C. The DMSO vapour flow rate remains very small compared with the IPA vapour flow rate. This is expected because DMSO has a much higher boiling point and remains mainly in the liquid phase.
 
 ### Heat Pump Output Results
 
-Table 8.3 shows the main output values obtained from the ChemCAD heat pump simulation. The table includes only the useful operating region up to 4.5 h. The abbreviations shown in the column titles stand for:
+Table 8.4 shows the main output values obtained from the ChemCAD heat pump simulation. The table includes only the useful operating region up to 4.5 h. The abbreviations shown in the column titles stand for:
 
 - VF: Vapour fraction
 - IC: inter-cooler
@@ -159,7 +159,7 @@ The time-zero value is treated as a start-up point and is not considered represe
 
 ### Useful Heat Pump Operation
 
-The useful heat pump operating period and the energy demand of the whole configuration can be summarized in Table 8.4.
+The useful heat pump operating period and the energy demand of the whole configuration can be summarized in Table 8.5.
 
 Table: Useful heat pump period.
 \label{tab:Useful heat pump period}

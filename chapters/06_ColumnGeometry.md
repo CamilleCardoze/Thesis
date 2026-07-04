@@ -168,7 +168,7 @@ $$
 x = \frac{600000 \times 0.38}{(120 \times 10^6)(0.85) - 0.6(600000)} = 0.00224 \text{ m} = 2.24 \text{ mm}
 $$
 
-The calculated theoretical wall thickness is therefore 2.44 mm. However, this value only represents the minimum thickness required to withstand the selected internal design pressure. A corrosion allowance must also be included, especially because carbon steel is used as the construction material. Assuming a corrosion allowance of 3.2 mm [@coulson_richardson_shell_tube_nd]:
+The calculated theoretical wall thickness is therefore 2.24 mm. However, this value only represents the minimum thickness required to withstand the selected internal design pressure. A corrosion allowance must also be included, especially because carbon steel is used as the construction material. Assuming a corrosion allowance of 3.2 mm [@coulson_richardson_shell_tube_nd]:
 
 $x_{\text{final}} = t + C_A = 2.24 + 3.2 = 5.44 \text{ mm}$
 
@@ -176,7 +176,7 @@ The practical wall thickness is rounded up to 6 mm in order to guarantee safety.
 
 The column is later planned to operate at a pressure of 0.1 bar. Since the outside of the column is assumed to be at atmospheric pressure, this condition creates an external pressure difference of approximately $P_{\text{external}} = 1.013 - 0.1 = 0.913 \text{ bar} = 91300 \text{ Pa}$
 
-A preliminary external pressure check shows that a 6 mm wall thickness can withstand the vacuum condition if the full 5 mm thickness is available structurally. To check for shell buckling, the following expression was used [@nasa_sp_8007_2020]:
+A preliminary external pressure check shows that the selected 6 mm wall thickness can withstand the vacuum condition. To check for shell buckling, the following expression was used [@nasa_sp_8007_2020]:
 
 $$
 P_{cr} = \frac{2E}{\sqrt{3(1-\nu^2)}} \left(\frac{x}{R}\right)^3

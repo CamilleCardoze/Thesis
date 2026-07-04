@@ -32,6 +32,9 @@ header-includes:
   - \addbibresource{refs/library.bib}
   - '\DefineBibliographyStrings{english}{bibliography={References}}'
   - '\defbibheading{bibliography}{\chapter*{\bibname}\addcontentsline{toc}{chapter}{\bibname}}'
+  - \usepackage{tocloft}
+  - \setlength{\cftsecnumwidth}{3.8em}
+  - \setlength{\cftsubsecnumwidth}{4.2em}
 biblatexoptions:
   - backend=biber
   - sorting=none

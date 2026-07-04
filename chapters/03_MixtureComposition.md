@@ -21,7 +21,7 @@ The process will start with total reflux (R = ∞) and after the steady-state is
 
 ## Residue Curves
 
-Residue curves (Figure 3.2) depict how the liquid composition in the distillation still-pot evolves over time during simple batch distillation at 1.01 bar. Each vertex of the triangle represents a pure component, and for the IPA-water-DMSO system the curves start at the azeotrope, showing the need for DMSO to carry out the separation. They, too, illustrate the separation trajectory: the concentration of DMSO increases as time progresses for every case, revealing that the distillation of this mixture will generally lead to DMSO accumulation in the pot, while IPA and water are removed. Similarly, the diagram tells us that DMSO forms no azeotropes with the other two components.
+Residue curves (Figure 3.1) depict how the liquid composition in the distillation still-pot evolves over time during simple batch distillation at 1.01 bar. Each vertex of the triangle represents a pure component, and for the IPA-water-DMSO system the curves start at the azeotrope, showing the need for DMSO to carry out the separation. They, too, illustrate the separation trajectory: the concentration of DMSO increases as time progresses for every case, revealing that the distillation of this mixture will generally lead to DMSO accumulation in the pot, while IPA and water are removed. Similarly, the diagram tells us that DMSO forms no azeotropes with the other two components.
 
 \begin{figure}[H]
 \centering

@@ -84,4 +84,4 @@ After the process was finished, the results were:
 - DMSO bottom:
   - 4060.02 kg, 0.9995 mol fraction DMSO, 0.0004904 mol fraction water, 7.226e-18 mol fraction IPA
 
-The results are satisfying and the liquids are usable for other applications. The total elapsed time was 16.15 hours, still under the 22 hour goal. Run-off steps will later be re-integrated into the system, further explained in Chapter 8, in order to recover as much material as possible. These results support the inclusion of material recovery steps in the overall process design, as they reduce waste formation and improve the reuse potential of both water and DMSO.
+The results are satisfying and the liquids are usable for other applications. The total elapsed time was 16.15 hours, still under the 22 hour goal. Run-off steps will later be re-integrated into the system, further explained in Chapter 9, in order to recover as much material as possible. These results support the inclusion of material recovery steps in the overall process design, as they reduce waste formation and improve the reuse potential of both water and DMSO.
