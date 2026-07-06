@@ -15,7 +15,7 @@ Table: Binary interaction parameters.
 | Isopropanol | Dimethyl Sulfoxide |    115.279    |   -25.0123    |       0.4       |
 |    Water    | Dimethyl Sulfoxide |    1203.77    |   -524.822    |     0.6615      |
 
-In Table 3.1 can be found the binary interaction parameters (BIPs) for the mixture, which are the coefficients to be used in the NRTL thermodynamic model to describe the interactions between pairs of molecules in the mixture. The BIPs describe the excess Gibbs free energy of mixing [@yao_ling_chien_2007].
+Table 3.1 shows the binary interaction parameters (BIPs) for the mixture, which are the coefficients to be used in the NRTL thermodynamic model to describe the interactions between pairs of molecules in the mixture. The BIPs describe the excess Gibbs free energy of mixing [@yao_ling_chien_2007].
 
 The process will start with total reflux (R = ∞) and after the steady-state is reached, it will be working with an initial reflux ratio of R = 6, subject to change as the analysis progresses. In the same manner, It will start with an initial feed temperature of 20°C and 12 theoretical stages for the column.
 
@@ -59,7 +59,7 @@ The altered activity coefficients increase the relative volatility of IPA compar
         \includegraphics[width=\textwidth]{figs/Picture25.png}
     \end{subfigure}
 
-    \caption{Effect the DMSO concentration (at 0.01, 0.05, 0.1 and 0.2 mole fraction, respectively) in the charge composition has on the azeotrope.}
+    \caption{Effect of the DMSO concentration in the charge composition on the azeotrope, at 0.01, 0.05, 0.1 and 0.2 mole fraction, respectively.}
     \label{fig:Effect the DMSO concentration in the charge composition has on the azeotrope}
 
 \end{figure}

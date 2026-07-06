@@ -102,7 +102,7 @@ The inter-cooler was required to reduce the vapour temperature between compressi
 \label{fig:ChemCAD heat pump simulation arrangement}
 \end{figure}
 
-The simulation was carried out dynamically using ChemCAD data maps and Excel coding. The input vapour composition and temperature at each time step was obtained from ChemCAD reports for the top vapour stream, these values were out-putted as a large excel table. Our excel file was programmed to transfer the data values to a specific cell in the document every 0.05 h. ChemCAD then read these values through a data map and used them as inputs for the heat pump simulation. In the same way, the output values from ChemCAD were exported back into Excel every 0.05 h and stored in a second table.
+The simulation was carried out dynamically using ChemCAD data maps and Excel coding. The input vapour composition and temperature at each time step were obtained from ChemCAD reports for the top vapour stream, these values were outputted as a large Excel table. Our Excel file was programmed to transfer the data values to a specific cell in the document every 0.05 h. ChemCAD then read these values through a data map and used them as inputs for the heat pump simulation. In the same way, the output values from ChemCAD were exported back into Excel every 0.05 h and stored in a second table.
 
 The main outputs recorded were the temperature after compression, vapour fraction after compression, temperature after the first heat exchanger, vapour fraction after the first heat exchanger, heat duty of the second heat exchanger, inter-cooler heat duty, compressor duties, cooling-water outlet temperature, and logarithmic mean temperature difference. Although the full simulation was carried out over the complete operation, the heat pump was found to be suitable only during the first 4.5 h of the distillation. As the batch progressed, the recoverable heat decreased, and later the temperature difference became too small for practical heat transfer; in some later intervals, heat input would even be required instead of useful heat recovery. Therefore, only this time interval was considered for the useful heat recovery evaluation.
 
@@ -134,7 +134,7 @@ Table 8.4 shows the main output values obtained from the ChemCAD heat pump simul
 - VF: Vapour fraction
 - IC: inter-cooler
 - HX1: second heat exchanger (first if the inter-cooler is not counted)
-- HX2: third heat exchanger (second of the inter-cooler is not counted)
+- HX2: third heat exchanger (second if the inter-cooler is not counted)
 - C1: first compressor
 - C2: second compressor
 
@@ -180,7 +180,7 @@ $$
 (97.61 + 99.72)\times 4.5 = 888\ \text{MJ}
 $$
 
-However, the heat pump will replace the duty of the reboiler duty during this time period, which was assumed to be $1000\ \text{MJ/h}$ throughout the entire process. Therefore, the total energy demand in this period is:
+However, the heat pump will replace the reboiler duty during this time period, which was assumed to be $1000\ \text{MJ/h}$ throughout the entire process. Therefore, the total energy demand in this period is:
 
 $$
 1000\times 4.5 = 4500\ \text{MJ}

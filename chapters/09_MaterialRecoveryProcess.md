@@ -119,7 +119,7 @@ Table: Results of the second material recovery method.
 
 \end{figure}
 
-Results are listed in Table 9.4. Both methods provided a distillate of sufficient purity, therefore all batches can be used; plotting was not needed. In Figure 9.1, can be seen when the reflux ratio is adjusted.
+Results are listed in Table 9.4. Both methods provided a distillate with sufficient purity, meaning that all batches met the required product specification. Figure 9.1 compares the total distillate purity and total distillate mass obtained with Method 1 and Method 2.
 
 The IPA distillate purity remained above the target in all batches, with an average value of 0.9987 mol fraction. However, the total distillate mass was slightly lower than in Method 1, with 14755.93 kg recovered over the six batches. The total operating time increased to 120.20 h, which is 9.20 h longer than Method 1.
 
@@ -173,7 +173,7 @@ Table: Comparison between Method 1 and Method 2.
 | Recycle batches studied     |                   5 |                    5 |
 | Operating adjustments       |               Fewer |                 More |
 
-Table 9.6 shows that both recycling strategies achieved the required IPA product purity. The average IPA distillate purity was practically the same for both methods, at approximately 0.9987 mol fraction. However, Method 1 produced a slightly larger total IPA distillate mass and required less total operating time. Method 2 required 120.20 h compared with 111.00 h for Method 1, which means that total off-cut re-integration increased the total process time by 9.30 h over the six simulated batches.
+Table 9.6 shows that both recycling strategies achieved the required IPA product purity. The average IPA distillate purity was practically the same for both methods, at approximately 0.9987 mol fraction. However, Method 1 produced a slightly larger total IPA distillate mass and required less total operating time. Method 2 required 120.20 h compared with 111.00 h for Method 1, which means that total off-cut re-integration increased the total process time by 9.20 h over the six simulated batches.
 
 Method 2 also required more changes to the simulation settings to maintain convergence and product quality. This suggests that adding both off-cut streams directly to the next pot charge makes the process more sensitive to composition changes. The larger DMSO bottom mass in Method 2 also shows that DMSO accumulates more strongly in the batch sequence when the water/DMSO stream is directly recycled.
 
@@ -190,7 +190,7 @@ The water/DMSO off-cut distillation serves as a following step to the water/IPA 
 \label{fig:Simulation layout for the Water-DMSO distillation}
 \end{figure}
 
-Different stop values for the process were investigated, finally 0.998 mol frac. water in the accumulator (water is more volatile than DMSO), as well as reflux ratio values and internal column values. The reflux ratio was varied in the range R = 2 to R = 10 (see Figure 9.4), and the pressure was studied between 1 bar and 0.1 bar (see Figure 9.5) [@bme_distillation_notes_v_nd].
+Different stop values, reflux ratios, and internal column values were investigated for this process. The final selected stop value was 0.998 mole fraction water in the accumulator, since water is more volatile than DMSO. The reflux ratio was varied in the range R = 2 to R = 10 (see Figure 9.4), and the pressure was studied between 1 bar and 0.1 bar (see Figure 9.5) [@bme_distillation_notes_v_nd].
 
 \begin{figure}[H]
 \centering
@@ -256,7 +256,7 @@ The reflux-ratio graphs must be interpreted together with the elapsed time and t
 
 The pressure-variation graphs must be interpreted in the same way. DMSO has a non-zero vapour pressure throughout the distillation, so the relevant factor is not whether DMSO starts evaporating, but how the water/DMSO ratio in the vapour and distillate changes as the batch progresses. The profiles below 1 bar appear almost unchanged at first, but the slightly longer operating times give a clearer transition between the water-rich and DMSO-rich regions. The length and slope of the decreasing section remain approximately similar, while the total elapsed time increases, indicating a more gradual and better-resolved separation. Based on these results, the selected conditions were $R = 9$ and $P = 0.1$ bar, which gave the most suitable separation between the water-rich distillate and the DMSO-rich bottom product.
 
-However, the ChemCAD simulation needed additional aid in order to converge. Hold-up values were added: 5 dm3 for the condenser and 3 dm3 for the stages [@kiss_2013]. These represent the liquid volume that gets held up back due to the geometry of the condenser and the type of packing. Adding hold up values also makes the process more accurate and realistic.
+However, the ChemCAD simulation needed additional aid in order to converge. Hold-up values were added: 5 dm3 for the condenser and 3 dm3 for the stages [@kiss_2013]. These represent the liquid volume that is retained due to the geometry of the condenser and the type of packing. Adding hold-up values also makes the process more accurate and realistic.
 
 In order to maintain realism, several batches for both recycling methods were performed again, with the same hold-up values for the column as in the water/DMSO distillation. Our products (composition, mass, time) only slightly changed, affecting the values only after 2-3 decimal points. Purity of the distillate products remained acceptable. It was then concluded that it is not necessary to add hold-up values in a more complex ChemCAD simulation for accurate results.
 
@@ -268,7 +268,7 @@ The recovered product is summarized below:
 - Purity of recovered DMSO: 0.9975 mole fraction DMSO
 - Total elapsed time: 6.55 h
 
-As it can be seen, with Method 1 the yields are still better than Method 2, and the new elapsed time is still inferior (117.55 h compared to 120.2 h). Therefore, even though it includes more steps, it can be concluded that Method 1 is the most efficient.
+As can be seen, Method 1 still gives better yields than Method 2, and the new elapsed time is still shorter: 117.55 h compared with 120.20 h. Therefore, even though it includes more steps, Method 1 can be considered the more efficient option.
 
 Since this distillation process is under vacuum, a proper vacuum pump was selected for this application. A breakdown of the selection is carried out in the next sub-chapter.
 
@@ -276,7 +276,7 @@ Since this distillation process is under vacuum, a proper vacuum pump was select
 
 A vacuum pump was required to evacuate the distillation system prior to the start of each batch. The objective was to reduce the system pressure from atmospheric pressure (1.0 bar absolute) to the operating pressure of 0.1 bar absolute before heating commenced. Since the vacuum pump is only used during the initial evacuation stage and not during normal distillation operation, the pump was sized based on the required pump-down time and the total gas volume contained within the equipment.
 
-The total volume to be evacuated consists of the vapor space in the feed tank and the internal volume of the distillation column. The feed tank has a total volume of 7.85 m³ and contains approximately 6 m³ of liquid before the start of the distillation, resulting in a vapor space of 1.85 m³. The distillation column has a height of 10 m and a diameter of 0.76 m, corresponding to an internal volume of approximately 6.39 m³. To allow for additional system volume, the total gas volume to be evacuated was approximated as 6.5 m³.
+The total volume to be evacuated consists of the vapour space in the feed tank and the internal volume of the distillation column. The feed tank has a total volume of 7.85 m³ and contains approximately 6 m³ of liquid before the start of the distillation, resulting in a vapour space of 1.85 m³. The distillation column has a height of 10 m and a diameter of 0.76 m, corresponding to an internal volume of approximately 4.54 m³. Therefore, the total gas volume is approximately 6.39 m³. To allow for additional system volume, the total gas volume to be evacuated was approximated as 6.5 m³.
 
 The required pumping speed was calculated using the standard vacuum pump-down equation [@pfeiffer_vacuum_basic_calculations]:
 

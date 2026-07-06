@@ -8,7 +8,7 @@ $MS = 2171.6$
 
 Two tanks were assumed: one tank for the pot charge and one tank for the distillate.
 
-## Energy Cost estimation
+## Energy Cost Estimation
 
 The heating energy cost was estimated from the reboiler duty and the additional energy required to heat the DMSO feed from 20°C to 62°C. Since the process heating duties are supplied by steam, the steam cost was used for these calculations instead of the electricity cost. Electricity is only used later for the compressor work required by the heat pump method. As of 2013 in the United States, literature reports high-pressure steam and electricity costs of approximately [@kiss_2013]:
 

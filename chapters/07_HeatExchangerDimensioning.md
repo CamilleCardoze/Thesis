@@ -236,7 +236,7 @@ Therefore, the selected condenser geometry provides the required total heat tran
 
 The initially estimated condenser heat transfer area was 7.59 m², while the corrected calculated area was 12.07 m². The difference is mainly caused by the lower calculated dirty overall heat transfer coefficient, which includes the individual heat-transfer resistances, tube-wall resistance, and fouling. Therefore, a larger area was required than in the first estimate.
 
-The cooling-water mass flow rate was calculated from the sensible heat balance equation[@bme_heat_exchangers_2_2024]:
+The cooling-water mass flow rate was calculated from the sensible heat balance equation [@bme_heat_exchangers_2_2024]:
 
 $$
 Q = \dot{m}_w c_{p,w} \Delta T_{w}
@@ -345,7 +345,7 @@ Rearranging for heat transfer area:
 
 $$ A = \frac{Q}{k F \Delta T} $$
 
-The DMSO-rich liquid temperature was taken to be $T_{DMSO} = 190^\circ C$. The heating steam temperature was then chosen as $T_{st} = 220^\circ C$, for an adequate temperature difference of $\Delta T = 30^\circ C$. This will allow for proper heat transfer without overheating the DMSO, which properties are to be taken as reference since it possesses the highest boiling resistance. For stages where DMSO does not make up most of the bottom liquid, the pressure of steam (and therefore the temperature) is to be decreased with a control system. At higher temperatures, a peak and then a rapid decrease in the value of the heat transfer coefficient can be observed [@fonyo_fabry_2004]. An illustration of this phenomenon with water as an example is illustrated in Figure 7.8.
+The DMSO-rich liquid temperature was taken to be $T_{DMSO} = 190^\circ C$. The heating steam temperature was then chosen as $T_{st} = 220^\circ C$, for an adequate temperature difference of $\Delta T = 30^\circ C$. This allows proper heat transfer without overheating the DMSO. DMSO properties were taken as the reference because DMSO has the highest boiling point in the mixture. For stages where DMSO does not make up most of the bottom liquid, the pressure of steam (and therefore the temperature) is to be decreased with a control system. At higher temperatures, a peak and then a rapid decrease in the value of the heat transfer coefficient can be observed [@fonyo_fabry_2004]. An illustration of this phenomenon with water as an example is shown in Figure 7.8.
 
 \begin{figure}[H]
 \centering
@@ -438,7 +438,7 @@ Therefore, the required total reboiler heat transfer area is 7.83 $\text{ m}^2$
 
 The initially estimated reboiler heat transfer area was 10.89 m², while the corrected calculated area was 7.83 m². The calculated area is lower because the detailed calculation gave a higher dirty overall heat transfer coefficient than the value assumed in the first estimate. As a result, the required heat duty could be transferred through a smaller surface area.
 
-The selected reboiler geometry is shown below, in Table 7.8. The same formulas and values obtained from literature used in subchapter 7.1, were applied in this subchapter [@coulson_richardson_shell_tube_nd]. Tube wall thickness was selected to be compatible with high pressure steam.
+The selected reboiler geometry is shown below, in Table 7.8. The same formulas and values obtained from literature used in subchapter 7.1 were applied here [@coulson_richardson_shell_tube_nd]. The tube wall thickness was selected to be compatible with high pressure steam.
 
 Table: Selected and calculated reboiler geometry.
 \label{tab:Selected and calculated reboiler geometry}
@@ -456,7 +456,7 @@ Table: Selected and calculated reboiler geometry.
 | Shell inside diameter | $D_{shell,in}$ |   0.477 |    m |
 | Shell wall thickness  |    $x_{shell}$ | 0.00493 |    m |
 
-The tube length was calculated from the total required heat transfer area, dividing the result by 2 since the configuration will have two tube passes (U-tubes). This means that the length of the tubes need to be half the size as for a single pass, while the shell diameter will double [@bme_heat_exchangers_2_2024]. The formula used to compute the tube length was:
+The tube length was calculated from the total required heat transfer area, dividing the result by 2 since the configuration will have two tube passes (U-tubes). The required straight tube length is halved compared with a single-pass arrangement, while the shell diameter will double [@bme_heat_exchangers_2_2024]. The formula used to compute the tube length was:
 
 $$
 L = \frac{A}{2N \pi D_{out}} = \frac{7.83}{2(28)\pi(0.0250)} = 1.78 \text{ m}

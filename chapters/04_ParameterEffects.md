@@ -2,9 +2,9 @@
 
 ## Targets
 
-in this chapter we will only study the IPA recovery step, or the dehydration of isopropanol. The distillate’s solution must be ≥ 99.75 mol% IPA, ≤ 0.25 mol% water, and ≤ 0.15 mol% dimethyl sulfoxide (DMSO).
+In this chapter, only the IPA recovery step, or the dehydration of isopropanol, is studied. The distillate’s solution must be ≥ 99.75 mol% IPA, ≤ 0.25 mol% water, and ≤ 0.15 mol% dimethyl sulfoxide (DMSO).
 In the water recovery step, the water will be withdrawn as distillate. In the water obtained, less than 0.05 mol% IPA should be present, and less than 0.035 mol% DMSO.
-After the whole process is finished, the remaining DMSO from the bottom will be collected from the column; The following purity requirements will be used: ≥ 99.75 mol% DMSO, ≤ 0.25 mol% water, and ≤ 0.15 mol% IPA.
+After the whole process is finished, the remaining DMSO from the bottom will be collected from the column; the following purity requirements will be used: ≥ 99.75 mol% DMSO, ≤ 0.25 mol% water, and ≤ 0.15 mol% IPA.
 
 ## Parameters studied
 
